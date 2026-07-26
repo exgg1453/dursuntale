@@ -7,8 +7,8 @@
 Undertale fan oyunu — Godot 4 versiyonu.
 
 ## Yapımcılar
-- **Codetabsite**
-- **Dursun Kebab**
+- **Codetabsite*
+- **Dursun Kebab*
 
 ## APK İndirme
 
@@ -36,4 +36,4 @@ godot --export-debug "Android" build/dursuntale.apk
 ```
 
 ## Lisans
-Bu proje eğitim amaçlıdır.
+Bu proje eğlence amaçlıdır.

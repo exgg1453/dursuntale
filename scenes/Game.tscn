@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://game"]
+
+[ext_resource type="Script" path="res://scripts/Game.gd" id="1_game"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_game")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(320, 240)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+
+[node name="Sprite2D" type="ColorRect" parent="Player"]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+color = Color(1, 0.1, 0.1, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HPBar" type="HBoxContainer" parent="CanvasLayer/HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -40.0
+offset_right = 300.0
+offset_bottom = -10.0
+
+[node name="HPLabel" type="Label" parent="CanvasLayer/HUD/HPBar"]
+layout_mode = 2
+text = "HP  20 / 20"
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 0.4, 1)
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/HUD/HPBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_size = Vector2(120, 20)
+max_value = 20.0
+value = 20.0

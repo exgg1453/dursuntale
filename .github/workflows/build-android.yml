@@ -85,13 +85,15 @@ jobs:
       - name: Import project assets
         run: |
           mkdir -p build
-          timeout 120 godot --headless --import --path . || true
+          # DÜZELTME: --path önce gelmeli
+          timeout 120 godot --headless --path . --import || true
           echo "Asset import tamamlandı ✓"
 
       - name: Build Android APK
         run: |
           mkdir -p build
-          godot --headless --export-debug "Android" build/dursuntale.apk --path .
+          # DÜZELTME: --path --export-debug'dan önce, çıktı yolu absolute olmalı
+          godot --headless --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk"
           echo "APK build tamamlandı ✓"
 
       - name: Verify APK

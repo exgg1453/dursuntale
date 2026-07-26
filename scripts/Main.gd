@@ -5,5 +5,4 @@ func _ready():
 	start_btn.pressed.connect(_on_start_pressed)
 
 func _on_start_pressed():
-	print("Oyun başlıyor!")
-	# get_tree().change_scene_to_file("res://scenes/Game.tscn")
+	get_tree().change_scene_to_file("res://scenes/Game.tscn")

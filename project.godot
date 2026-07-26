@@ -52,3 +52,4 @@ ui_cancel={
 
 GS="*res://scripts/GameState.gd"
 SpriteRegistry="*res://scripts/SpriteRegistry.gd"
+DialogBox="*res://scenes/DialogBox.tscn"

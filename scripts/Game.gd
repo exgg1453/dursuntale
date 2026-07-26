@@ -10,6 +10,8 @@ const MAX_HP: int = 20
 var current_hp: int = MAX_HP
 
 func _ready() -> void:
+	if player:
+		player.add_to_group("player")
 	update_hp_display()
 
 func _physics_process(delta: float) -> void:

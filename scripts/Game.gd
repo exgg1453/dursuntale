@@ -1,18 +1,18 @@
 extends Node2D
 
-@onready var player = $Player
-@onready var hp_label = $CanvasLayer/HUD/HPBar/HPLabel
-@onready var hp_bar = $CanvasLayer/HUD/HPBar/ProgressBar
+@onready var player: CharacterBody2D = $Player
+@onready var hp_label: Label = $CanvasLayer/HUD/HPBar/HPLabel
+@onready var hp_bar: ProgressBar = $CanvasLayer/HUD/HPBar/ProgressBar
 
-const PLAYER_SPEED = 120.0
-const MAX_HP = 20
+const PLAYER_SPEED: float = 120.0
+const MAX_HP: int = 20
 
 var current_hp: int = MAX_HP
 
-func _ready():
+func _ready() -> void:
 	update_hp_display()
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	handle_movement(delta)
 
 func handle_movement(delta: float) -> void:
@@ -27,7 +27,8 @@ func handle_movement(delta: float) -> void:
 		dir.x -= 1
 	if Input.is_action_pressed("move_right"):
 		dir.x += 1
-	player.position += dir.normalized() * PLAYER_SPEED * delta
+	player.velocity = dir.normalized() * PLAYER_SPEED
+	player.move_and_slide()
 
 func update_hp_display() -> void:
 	if hp_label:

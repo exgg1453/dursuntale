@@ -1,0 +1,20 @@
+# Godot 4 generated files
+.godot/
+*.translation
+
+# Android build output
+build/
+*.apk
+*.aab
+
+# Debug keystore (güvenlik)
+*.keystore
+*.jks
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Editor configs
+*.suo
+*.user

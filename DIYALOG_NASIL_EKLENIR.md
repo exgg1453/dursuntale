@@ -1,55 +1,65 @@
-# 🗨️ Diyalog Ekleme Rehberi
+# 🗨️ Diyalog Ekleme Rehberi — GML msg[] Formatı
 
-## Hızlı Başlangıç
+## Özet: Nasıl eklenir?
 
-`scripts/NPC.gd` dosyasındaki `DIALOGS` sözlüğüne yeni diyalog ekle:
+`scripts/NPC.gd` dosyasındaki `_setup_dialog()` fonksiyonuna match bloğu ekle:
 
 ```gdscript
-const DIALOGS: Dictionary = {
-    "benim_npcim": [
-        {"text": "* Merhaba!", "face": "toriel"},
-        {"text": "* Nasılsın?",  "face": "toriel"},
-        {"text": "* Güle güle!", "face": "none"},
-    ],
-}
+"kendi_npcim":
+    GS.typer = 5          # Toriel sesi/fontu
+    GS.facechoice = 1     # Toriel yüzü
+    GS.msg[0] = "* Merhaba!/"
+    GS.msg[1] = "* Nasılsın?/"
+    GS.msg[2] = "* Güle güle!/%%"
 ```
 
-## Diyalog Satırı Seçenekleri
+Sonra Godot'ta NPC node'una NPC.gd ekle, Inspector'dan `npc_id = "kendi_npcim"` seç. Bitti.
 
-| Alan | Açıklama | Örnek |
-|------|----------|-------|
-| `text` | Gösterilecek metin | `"* Merhaba!"` |
-| `face` | Yüz görseli | `"toriel"`, `"sans"`, `"none"` |
+---
 
-## Metin Özel Kodlar
+## Metin Formatı (GML ile birebir aynı)
 
 | Kod | Anlamı |
 |-----|--------|
-| `\n` | Yeni satır |
-| `*`  | Undertale tarzı diyalog başı |
+| `/` | Kutu sonu — Enter bekler, sonraki msg'e geçer |
+| `/%` | Son kutu — Enter'da diyalog kapanır |
+| `/%%` | Hemen kapat |
+| `&` | Aynı kutuda yeni satır |
+| `^1` `^2` | Duraklama (1=kısa, 2=orta) |
+| `\R` `\G` `\Y` `\W` | Renk: kırmızı, yeşil, sarı, beyaz |
 
-## NPC Sahneye Ekleme
+## GS.typer Değerleri (ses + font)
 
-1. Godot'ta yeni Node2D oluştur → `NPC.gd` scripti ekle
-2. Inspector'dan `npc_id` = `"benim_npcim"` yaz
-3. Alt node ekle: `Area2D` → `CollisionShape2D` (CircleShape2D, radius 40)
-4. Karakteri bu alana sokunca Z/Enter'a basınca diyalog açılır
+| Değer | Karakter |
+|-------|----------|
+| 0 | Varsayılan |
+| 4 | PAPYRUS |
+| 5 | Toriel |
+| 10 | ??? (Sans esprisi) |
+| 18 | Sans |
+| 27 | Mettaton |
+| 37 | Undyne |
+| 47 | Alphys |
 
-## Mevcut Yüzler
+## GS.facechoice Değerleri (yüz görseli)
 
-Yüz görseli eklemek için: `res://faces/` klasörüne PNG koy, isim = anahtar
-- `toriel` → `faces/toriel.png`
-- `sans`   → `faces/sans.png`
-- `papyrus`→ `faces/papyrus.png`
-- `flowey` → `faces/flowey.png`
-- `none`   → yüz gösterilmez
+| Değer | Yüz |
+|-------|-----|
+| 0 | Yok |
+| 1 | Toriel |
+| 2 | Flowey |
+| 3 | Sans |
+| 4 | Papyrus |
+| 5 | Undyne |
 
-## Diyalog Kodu'ndan Tetikleme
+Yüz görseli eklemek için: `res://faces/` klasörüne PNG koy.
 
-Herhangi bir script'ten:
+## Herhangi Bir Script'ten Tetikleme
+
 ```gdscript
-DialogBox.show_dialog([
-    {"text": "* Bu bir test!"},
-    {"text": "* İkinci satır."},
-])
+GS.typer = 18
+GS.facechoice = 3
+GS.msg[0] = "* hey./"
+GS.msg[1] = "* ne haber./%%"
+DialogBox.open()
 ```

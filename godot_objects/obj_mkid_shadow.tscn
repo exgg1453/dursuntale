@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmkids"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_mkid_shadow.gd" id="1_objmkids"]
+
+[node name="obj_mkid_shadow" type="Node2D"]
+script = ExtResource("1_objmkids")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_mkid_r_shadow_0.png")

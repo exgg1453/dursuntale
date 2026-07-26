@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objnormal"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_normalplink.gd" id="1_objnormal"]
+
+[node name="obj_normalplink" type="Node2D"]
+script = ExtResource("1_objnormal")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_statueplink_0.png")

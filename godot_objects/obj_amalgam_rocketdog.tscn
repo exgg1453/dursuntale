@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objamalga"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_amalgam_rocketdog.gd" id="1_objamalga"]
+
+[node name="obj_amalgam_rocketdog" type="Node2D"]
+script = ExtResource("1_objamalga")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_nofacedog_legtuck_0.png")

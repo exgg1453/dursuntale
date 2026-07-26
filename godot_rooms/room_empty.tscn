@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_empty"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="1_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="2_objoverwo"]
+
+[node name="room_empty" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114016" parent="Instances" instance=ExtResource("1_objmainch")]
+position = Vector2(140, 100)
+
+[node name="inst_114017" parent="Instances" instance=ExtResource("2_objoverwo")]
+position = Vector2(20, 20)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objumbrel"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_umbrellabox.gd" id="1_objumbrel"]
+
+[node name="obj_umbrellabox" type="CharacterBody2D"]
+script = ExtResource("1_objumbrel")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_umbrellaholder_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_introim"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_titleimage.tscn" id="1_objtitlei"]
+
+[node name="room_introimage" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_100005" parent="Instances" instance=ExtResource("1_objtitlei")]
+position = Vector2(0, 0)

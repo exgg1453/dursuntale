@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objshopmo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_shopmouth1.gd" id="1_objshopmo"]
+
+[node name="obj_shopmouth1" type="Node2D"]
+script = ExtResource("1_objshopmo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_shopkeeper1mouth_0.png")

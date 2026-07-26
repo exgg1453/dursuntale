@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_f_start"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_f_gamestart.tscn" id="1_objfgame"]
+
+[node name="room_f_start" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113501" parent="Instances" instance=ExtResource("1_objfgame")]
+position = Vector2(16, 16)

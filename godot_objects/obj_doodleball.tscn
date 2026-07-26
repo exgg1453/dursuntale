@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdoodle"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_doodleball.gd" id="1_objdoodle"]
+
+[node name="obj_doodleball" type="Node2D"]
+script = ExtResource("1_objdoodle")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_doodlebullet_0.png")

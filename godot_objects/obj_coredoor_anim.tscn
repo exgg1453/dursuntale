@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcoredo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_coredoor_anim.gd" id="1_objcoredo"]
+
+[node name="obj_coredoor_anim" type="Node2D"]
+script = ExtResource("1_objcoredo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_coredoor_0.png")

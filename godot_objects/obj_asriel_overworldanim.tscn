@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objasriel"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_asriel_overworldanim.gd" id="1_objasriel"]
+
+[node name="obj_asriel_overworldanim" type="Node2D"]
+script = ExtResource("1_objasriel")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_asriel_d_0.png")

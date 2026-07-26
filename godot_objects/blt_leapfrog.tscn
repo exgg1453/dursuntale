@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bltleapfr"]
+
+[ext_resource type="Script" path="res://godot_objects/blt_leapfrog.gd" id="1_bltleapfr"]
+
+[node name="blt_leapfrog" type="Node2D"]
+script = ExtResource("1_bltleapfr")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_smallfrogbullet_0.png")

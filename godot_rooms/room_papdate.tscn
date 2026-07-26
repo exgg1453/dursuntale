@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_papdate"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_papdate.tscn" id="1_objpapdat"]
+
+[node name="room_papdate" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114005" parent="Instances" instance=ExtResource("1_objpapdat")]
+position = Vector2(256, 112)

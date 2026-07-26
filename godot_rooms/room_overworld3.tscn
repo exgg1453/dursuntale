@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://room_overwor"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorB.tscn" id="1_objdoorb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="2_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="3_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="4_objoverwo"]
+
+[node name="room_overworld3" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113479" parent="Instances" instance=ExtResource("2_objmainch")]
+position = Vector2(260, 340)
+
+[node name="inst_113480" parent="Instances" instance=ExtResource("3_objmarker")]
+position = Vector2(120, 340)
+
+[node name="inst_113481" parent="Instances" instance=ExtResource("1_objdoorb")]
+position = Vector2(0, 180)
+
+[node name="inst_113482" parent="Instances" instance=ExtResource("4_objoverwo")]
+position = Vector2(0, 40)

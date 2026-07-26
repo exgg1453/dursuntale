@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objjudges"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_judgeshroom.gd" id="1_objjudges"]
+
+[node name="obj_judgeshroom" type="CharacterBody2D"]
+script = ExtResource("1_objjudges")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_mushroomdance_prep_0.png")

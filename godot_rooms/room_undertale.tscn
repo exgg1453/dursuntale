@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_underta"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="1_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_undertaletitle.tscn" id="2_objundert"]
+
+[node name="room_undertale" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114021" parent="Instances" instance=ExtResource("2_objundert")]
+position = Vector2(0, 0)
+
+[node name="inst_114022" parent="Instances" instance=ExtResource("1_objmarker")]
+position = Vector2(144, 80)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objshower"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_showercurtain.gd" id="1_objshower"]
+
+[node name="obj_showercurtain" type="Node2D"]
+script = ExtResource("1_objshower")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_showercurtain_empty_0.png")

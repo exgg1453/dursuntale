@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://obj3platg"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_3platgen.gd" id="1_obj3platg"]
+
+[node name="obj_3platgen" type="Node2D"]
+script = ExtResource("1_obj3platg")

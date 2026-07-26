@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bltfloatf"]
+
+[ext_resource type="Script" path="res://godot_objects/blt_floatfire.gd" id="1_bltfloatf"]
+
+[node name="blt_floatfire" type="Node2D"]
+script = ExtResource("1_bltfloatf")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_firebullet_0.png")

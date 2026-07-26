@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfhand"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_f_handfork.gd" id="1_objfhand"]
+
+[node name="obj_f_handfork" type="Node2D"]
+script = ExtResource("1_objfhand")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_f_handknife_0.png")

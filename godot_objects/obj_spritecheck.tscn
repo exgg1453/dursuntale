@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsprite"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_spritecheck.gd" id="1_objsprite"]
+
+[node name="obj_spritecheck" type="Node2D"]
+script = ExtResource("1_objsprite")

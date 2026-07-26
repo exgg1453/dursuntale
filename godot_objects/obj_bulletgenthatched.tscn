@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbullet"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bulletgenthatched.gd" id="1_objbullet"]
+
+[node name="obj_bulletgenthatched" type="Node2D"]
+script = ExtResource("1_objbullet")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objpuzzle"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_puzzlehater.gd" id="1_objpuzzle"]
+
+[node name="obj_puzzlehater" type="CharacterBody2D"]
+script = ExtResource("1_objpuzzle")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_puzzlehater_0.png")

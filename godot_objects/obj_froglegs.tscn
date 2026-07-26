@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfrogle"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_froglegs.gd" id="1_objfrogle"]
+
+[node name="obj_froglegs" type="Node2D"]
+script = ExtResource("1_objfrogle")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_froglegs_0.png")

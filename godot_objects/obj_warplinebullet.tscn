@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwarpli"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_warplinebullet.gd" id="1_objwarpli"]
+
+[node name="obj_warplinebullet" type="Node2D"]
+script = ExtResource("1_objwarpli")

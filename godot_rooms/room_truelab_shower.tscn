@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://room_truelab"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorB.tscn" id="1_objdoorb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="2_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="3_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="4_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_showercurtain.tscn" id="5_objshower"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="6_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall.tscn" id="7_objsolidt"]
+
+[node name="room_truelab_shower" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_112751" parent="Instances" instance=ExtResource("5_objshower")]
+position = Vector2(140, 30)
+
+[node name="inst_112752" parent="Instances" instance=ExtResource("7_objsolidt")]
+position = Vector2(120, 30)
+
+[node name="inst_112753" parent="Instances" instance=ExtResource("7_objsolidt")]
+position = Vector2(200, 30)
+
+[node name="inst_112754" parent="Instances" instance=ExtResource("2_objmainch")]
+position = Vector2(140, 160)
+
+[node name="inst_112755" parent="Instances" instance=ExtResource("1_objdoorb")]
+position = Vector2(140, 220)
+
+[node name="inst_112756" parent="Instances" instance=ExtResource("1_objdoorb")]
+position = Vector2(160, 220)
+
+[node name="inst_112757" parent="Instances" instance=ExtResource("1_objdoorb")]
+position = Vector2(180, 220)
+
+[node name="inst_112758" parent="Instances" instance=ExtResource("3_objmarker")]
+position = Vector2(160, 190)
+
+[node name="inst_112759" parent="Instances" instance=ExtResource("6_objsolidl")]
+position = Vector2(120, 60)
+
+[node name="inst_112760" parent="Instances" instance=ExtResource("4_objoverwo")]
+position = Vector2(20, 20)

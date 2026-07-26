@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_start"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_screen.tscn" id="1_objscreen"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_time.tscn" id="2_objtime"]
+
+[node name="room_start" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_100000" parent="Instances" instance=ExtResource("2_objtime")]
+position = Vector2(0, 0)
+
+[node name="inst_100001" parent="Instances" instance=ExtResource("1_objscreen")]
+position = Vector2(48, 0)

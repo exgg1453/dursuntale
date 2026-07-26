@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objrarepe"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_rarependant.gd" id="1_objrarepe"]
+
+[node name="obj_rarependant" type="CharacterBody2D"]
+script = ExtResource("1_objrarepe")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_magicpendant_0.png")

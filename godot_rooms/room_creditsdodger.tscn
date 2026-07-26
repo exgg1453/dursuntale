@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_credits"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_creditsloader.tscn" id="1_objcredit"]
+
+[node name="room_creditsdodger" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113495" parent="Instances" instance=ExtResource("1_objcredit")]
+position = Vector2(128, 176)

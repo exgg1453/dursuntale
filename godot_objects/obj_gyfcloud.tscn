@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgyfclo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_gyfcloud.gd" id="1_objgyfclo"]
+
+[node name="obj_gyfcloud" type="Node2D"]
+script = ExtResource("1_objgyfclo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_gyftcloud_0.png")

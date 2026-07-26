@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtemvil"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_temvillagemusic.gd" id="1_objtemvil"]
+
+[node name="obj_temvillagemusic" type="Node2D"]
+script = ExtResource("1_objtemvil")

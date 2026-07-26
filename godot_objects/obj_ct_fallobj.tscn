@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objctfal"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_ct_fallobj.gd" id="1_objctfal"]
+
+[node name="obj_ct_fallobj" type="Node2D"]
+script = ExtResource("1_objctfal")

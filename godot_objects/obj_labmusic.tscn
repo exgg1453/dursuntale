@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objlabmus"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_labmusic.gd" id="1_objlabmus"]
+
+[node name="obj_labmusic" type="Node2D"]
+script = ExtResource("1_objlabmus")

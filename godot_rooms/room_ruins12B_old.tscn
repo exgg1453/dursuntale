@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://room_ruins12"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_candydish2.tscn" id="1_objcandyd"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorD.tscn" id="2_objdoord"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="3_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerC.tscn" id="4_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="5_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="6_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall.tscn" id="7_objsolidt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidwide.tscn" id="8_objsolidw"]
+
+[node name="room_ruins12B_old" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113820" parent="Instances" instance=ExtResource("7_objsolidt")]
+position = Vector2(240, 40)
+
+[node name="inst_113821" parent="Instances" instance=ExtResource("3_objmainch")]
+position = Vector2(90, 120)
+
+[node name="inst_113822" parent="Instances" instance=ExtResource("1_objcandyd")]
+position = Vector2(150, 120)
+
+[node name="inst_113823" parent="Instances" instance=ExtResource("4_objmarker")]
+position = Vector2(20, 120)
+
+[node name="inst_113824" parent="Instances" instance=ExtResource("2_objdoord")]
+position = Vector2(0, 120)
+
+[node name="inst_113825" parent="Instances" instance=ExtResource("2_objdoord")]
+position = Vector2(0, 140)
+
+[node name="inst_113826" parent="Instances" instance=ExtResource("6_objsolidl")]
+position = Vector2(60, 80)
+
+[node name="inst_113827" parent="Instances" instance=ExtResource("8_objsolidw")]
+position = Vector2(40, 100)
+
+[node name="inst_113828" parent="Instances" instance=ExtResource("8_objsolidw")]
+position = Vector2(0, 100)
+
+[node name="inst_113829" parent="Instances" instance=ExtResource("8_objsolidw")]
+position = Vector2(40, 160)
+
+[node name="inst_113830" parent="Instances" instance=ExtResource("8_objsolidw")]
+position = Vector2(0, 160)
+
+[node name="inst_113831" parent="Instances" instance=ExtResource("6_objsolidl")]
+position = Vector2(80, 180)
+
+[node name="inst_113832" parent="Instances" instance=ExtResource("5_objoverwo")]
+position = Vector2(20, 0)

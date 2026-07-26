@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdarkma"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_darkman_actor.gd" id="1_objdarkma"]
+
+[node name="obj_darkman_actor" type="Node2D"]
+script = ExtResource("1_objdarkma")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_darkman_l_0.png")

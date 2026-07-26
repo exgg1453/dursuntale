@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmusicc"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_musicchecker.gd" id="1_objmusicc"]
+
+[node name="obj_musicchecker" type="Node2D"]
+script = ExtResource("1_objmusicc")

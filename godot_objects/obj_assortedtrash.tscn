@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objassort"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_assortedtrash.gd" id="1_objassort"]
+
+[node name="obj_assortedtrash" type="Node2D"]
+script = ExtResource("1_objassort")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_dvdcase_water_0.png")

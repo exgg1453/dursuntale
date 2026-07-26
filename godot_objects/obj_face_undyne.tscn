@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfaceu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_face_undyne.gd" id="1_objfaceu"]
+
+[node name="obj_face_undyne" type="Node2D"]
+script = ExtResource("1_objfaceu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_face_undyne0_0.png")

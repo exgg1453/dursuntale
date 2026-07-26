@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objface"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_face.gd" id="1_objface"]
+
+[node name="obj_face" type="Node2D"]
+script = ExtResource("1_objface")

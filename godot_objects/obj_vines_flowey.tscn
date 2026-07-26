@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objvines"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_vines_flowey.gd" id="1_objvines"]
+
+[node name="obj_vines_flowey" type="Node2D"]
+script = ExtResource("1_objvines")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_vines_flowey_0.png")

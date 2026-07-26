@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objartcla"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_artclass_sign.gd" id="1_objartcla"]
+
+[node name="obj_artclass_sign" type="CharacterBody2D"]
+script = ExtResource("1_objartcla")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_npc_sign_0.png")

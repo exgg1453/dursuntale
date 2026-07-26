@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmenumu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_menumusictest.gd" id="1_objmenumu"]
+
+[node name="obj_menumusictest" type="Node2D"]
+script = ExtResource("1_objmenumu")

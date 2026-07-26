@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_gameove"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_gameover.tscn" id="1_objgameov"]
+
+[node name="room_gameover" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113988" parent="Instances" instance=ExtResource("1_objgameov")]
+position = Vector2(192, 128)

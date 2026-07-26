@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsadgor"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_sadgore.gd" id="1_objsadgor"]
+
+[node name="obj_sadgore" type="Node2D"]
+script = ExtResource("1_objsadgor")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_sadgore_0.png")

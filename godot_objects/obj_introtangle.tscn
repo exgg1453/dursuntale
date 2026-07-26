@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objintrot"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_introtangle.gd" id="1_objintrot"]
+
+[node name="obj_introtangle" type="Node2D"]
+script = ExtResource("1_objintrot")

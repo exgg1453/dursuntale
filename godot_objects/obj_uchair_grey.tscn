@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objuchair"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_uchair_grey.gd" id="1_objuchair"]
+
+[node name="obj_uchair_grey" type="Node2D"]
+script = ExtResource("1_objuchair")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_uchair_grey_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfshot"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_f_shotflame.gd" id="1_objfshot"]
+
+[node name="obj_f_shotflame" type="Node2D"]
+script = ExtResource("1_objfshot")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_floweyx_flame_move_0.png")

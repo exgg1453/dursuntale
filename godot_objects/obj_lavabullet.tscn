@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objlavabu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_lavabullet.gd" id="1_objlavabu"]
+
+[node name="obj_lavabullet" type="Node2D"]
+script = ExtResource("1_objlavabu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_lavaflame_0.png")

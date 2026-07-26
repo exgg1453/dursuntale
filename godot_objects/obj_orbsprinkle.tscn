@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objorbspr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_orbsprinkle.gd" id="1_objorbspr"]
+
+[node name="obj_orbsprinkle" type="Node2D"]
+script = ExtResource("1_objorbspr")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_wizard_orbsprinkle_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcarrot"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_carrotshot.gd" id="1_objcarrot"]
+
+[node name="obj_carrotshot" type="Node2D"]
+script = ExtResource("1_objcarrot")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_carrotshot_0.png")

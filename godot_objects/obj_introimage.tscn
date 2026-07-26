@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objintroi"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_introimage.gd" id="1_objintroi"]
+
+[node name="obj_introimage" type="Node2D"]
+script = ExtResource("1_objintroi")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_introimage_0.png")

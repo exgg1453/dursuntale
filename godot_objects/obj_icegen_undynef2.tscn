@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objicegen"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_icegen_undynef2.gd" id="1_objicegen"]
+
+[node name="obj_icegen_undynef2" type="Node2D"]
+script = ExtResource("1_objicegen")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_waterice_0.png")

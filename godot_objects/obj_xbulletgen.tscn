@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objxbulle"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_xbulletgen.gd" id="1_objxbulle"]
+
+[node name="obj_xbulletgen" type="Node2D"]
+script = ExtResource("1_objxbulle")

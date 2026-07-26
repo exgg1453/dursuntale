@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_adate"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_adate.tscn" id="1_objadate"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_adate_body.tscn" id="2_objadate"]
+
+[node name="room_adate" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114006" parent="Instances" instance=ExtResource("2_objadate")]
+position = Vector2(272, 160)
+
+[node name="inst_114007" parent="Instances" instance=ExtResource("1_objadate")]
+position = Vector2(0, 0)

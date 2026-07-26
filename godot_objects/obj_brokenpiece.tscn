@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbroken"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_brokenpiece.gd" id="1_objbroken"]
+
+[node name="obj_brokenpiece" type="Node2D"]
+script = ExtResource("1_objbroken")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_parasolmett_0.png")

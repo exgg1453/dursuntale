@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objstrong"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_strongpunch.gd" id="1_objstrong"]
+
+[node name="obj_strongpunch" type="Node2D"]
+script = ExtResource("1_objstrong")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_hyperfist_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgrillb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_grillbynpc_womandog.gd" id="1_objgrillb"]
+
+[node name="obj_grillbynpc_womandog" type="CharacterBody2D"]
+script = ExtResource("1_objgrillb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_womandogwalk_0.png")

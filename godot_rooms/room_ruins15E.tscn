@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://room_ruins15"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_door_ruins13.tscn" id="1_objdoorr"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="2_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerX.tscn" id="3_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="4_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="5_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall.tscn" id="6_objsolidt"]
+
+[node name="room_ruins15E" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_100969" parent="Instances" instance=ExtResource("6_objsolidt")]
+position = Vector2(20, 0)
+
+[node name="inst_100970" parent="Instances" instance=ExtResource("6_objsolidt")]
+position = Vector2(280, 0)
+
+[node name="inst_100971" parent="Instances" instance=ExtResource("2_objmainch")]
+position = Vector2(150, 105)
+
+[node name="inst_100972" parent="Instances" instance=ExtResource("1_objdoorr")]
+position = Vector2(140, 65)
+
+[node name="inst_100973" parent="Instances" instance=ExtResource("1_objdoorr")]
+position = Vector2(160, 65)
+
+[node name="inst_100974" parent="Instances" instance=ExtResource("3_objmarker")]
+position = Vector2(150, 115)
+
+[node name="inst_100975" parent="Instances" instance=ExtResource("5_objsolidl")]
+position = Vector2(20, 180)
+
+[node name="inst_100976" parent="Instances" instance=ExtResource("5_objsolidl")]
+position = Vector2(20, 60)
+
+[node name="inst_100977" parent="Instances" instance=ExtResource("4_objoverwo")]
+position = Vector2(20, 20)

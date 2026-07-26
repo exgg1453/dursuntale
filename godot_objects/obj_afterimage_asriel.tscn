@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objafteri"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_afterimage_asriel.gd" id="1_objafteri"]
+
+[node name="obj_afterimage_asriel" type="Node2D"]
+script = ExtResource("1_objafteri")

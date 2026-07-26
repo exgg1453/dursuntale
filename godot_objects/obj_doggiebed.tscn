@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdoggie"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_doggiebed.gd" id="1_objdoggie"]
+
+[node name="obj_doggiebed" type="CharacterBody2D"]
+script = ExtResource("1_objdoggie")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_dogbed_0.png")

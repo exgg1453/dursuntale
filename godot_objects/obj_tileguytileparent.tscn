@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtilegu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_tileguytileparent.gd" id="1_objtilegu"]
+
+[node name="obj_tileguytileparent" type="Node2D"]
+script = ExtResource("1_objtilegu")

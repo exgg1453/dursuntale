@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsansst"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_sanssteps.gd" id="1_objsansst"]
+
+[node name="obj_sanssteps" type="Node2D"]
+script = ExtResource("1_objsansst")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_sanssteps_0.png")

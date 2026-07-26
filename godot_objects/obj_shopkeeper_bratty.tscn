@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objshopke"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_shopkeeper_bratty.gd" id="1_objshopke"]
+
+[node name="obj_shopkeeper_bratty" type="Node2D"]
+script = ExtResource("1_objshopke")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_brattybody_0.png")

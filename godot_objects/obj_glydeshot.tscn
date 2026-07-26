@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objglydes"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_glydeshot.gd" id="1_objglydes"]
+
+[node name="obj_glydeshot" type="Node2D"]
+script = ExtResource("1_objglydes")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_glydeshot_0.png")

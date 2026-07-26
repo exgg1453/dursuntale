@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objflashe"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_flasher.gd" id="1_objflashe"]
+
+[node name="obj_flasher" type="Node2D"]
+script = ExtResource("1_objflashe")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_whitefader_0.png")

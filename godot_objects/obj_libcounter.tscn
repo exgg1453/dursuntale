@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objlibcou"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_libcounter.gd" id="1_objlibcou"]
+
+[node name="obj_libcounter" type="Node2D"]
+script = ExtResource("1_objlibcou")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_libcounter_0.png")

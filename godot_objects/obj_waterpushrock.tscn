@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwaterp"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_waterpushrock.gd" id="1_objwaterp"]
+
+[node name="obj_waterpushrock" type="Node2D"]
+script = ExtResource("1_objwaterp")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_waterpushrock_0.png")

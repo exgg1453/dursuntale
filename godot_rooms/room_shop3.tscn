@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://room_shop3"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_shop3.tscn" id="1_objshop3"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_shopkeeper_bratty.tscn" id="2_objshopke"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_shopkeeper_catty.tscn" id="3_objshopke"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_shopmouth1.tscn" id="4_objshopmo"]
+
+[node name="room_shop3" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113993" parent="Instances" instance=ExtResource("3_objshopke")]
+position = Vector2(112, 36)
+
+[node name="inst_113994" parent="Instances" instance=ExtResource("2_objshopke")]
+position = Vector2(4, 4)
+
+[node name="inst_113995" parent="Instances" instance=ExtResource("1_objshop3")]
+position = Vector2(284, 4)
+
+[node name="inst_113996" parent="Instances" instance=ExtResource("4_objshopmo")]
+position = Vector2(128, 48)

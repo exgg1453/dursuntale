@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfacef"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_face_floweytalk.gd" id="1_objfacef"]
+
+[node name="obj_face_floweytalk" type="Node2D"]
+script = ExtResource("1_objfacef")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_floweynice_0.png")

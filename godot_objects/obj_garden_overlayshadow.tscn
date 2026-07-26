@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgarden"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_garden_overlayshadow.gd" id="1_objgarden"]
+
+[node name="obj_garden_overlayshadow" type="Node2D"]
+script = ExtResource("1_objgarden")

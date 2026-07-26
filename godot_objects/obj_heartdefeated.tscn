@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objheartd"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_heartdefeated.gd" id="1_objheartd"]
+
+[node name="obj_heartdefeated" type="Node2D"]
+script = ExtResource("1_objheartd")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_heart_0.png")

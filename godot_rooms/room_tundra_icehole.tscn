@@ -1,0 +1,65 @@
+[gd_scene load_steps=13 format=3 uid="uid://room_tundra_"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorA.tscn" id="1_objdoora"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_falltransition.tscn" id="2_objfalltr"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_icecap_npcb.tscn" id="3_objicecap"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="4_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerB.tscn" id="5_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="6_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_papyrussnowman.tscn" id="7_objpapyru"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sanssnowman.tscn" id="8_objsanssn"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="9_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall.tscn" id="10_objsolidt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall_2.tscn" id="11_objsolidt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_tundramusic.tscn" id="12_objtundra"]
+
+[node name="room_tundra_icehole" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_102643" parent="Instances" instance=ExtResource("10_objsolidt")]
+position = Vector2(0, 0)
+
+[node name="inst_102644" parent="Instances" instance=ExtResource("10_objsolidt")]
+position = Vector2(280, 100)
+
+[node name="inst_102645" parent="Instances" instance=ExtResource("11_objsolidt")]
+position = Vector2(60, 40)
+
+[node name="inst_102646" parent="Instances" instance=ExtResource("11_objsolidt")]
+position = Vector2(60, 0)
+
+[node name="inst_102647" parent="Instances" instance=ExtResource("4_objmainch")]
+position = Vector2(140, 140)
+
+[node name="inst_102648" parent="Instances" instance=ExtResource("8_objsanssn")]
+position = Vector2(180, 130)
+
+[node name="inst_102649" parent="Instances" instance=ExtResource("7_objpapyru")]
+position = Vector2(100, 100)
+
+[node name="inst_102650" parent="Instances" instance=ExtResource("1_objdoora")]
+position = Vector2(20, 0)
+
+[node name="inst_102651" parent="Instances" instance=ExtResource("1_objdoora")]
+position = Vector2(40, 0)
+
+[node name="inst_102652" parent="Instances" instance=ExtResource("5_objmarker")]
+position = Vector2(30, 20)
+
+[node name="inst_102653" parent="Instances" instance=ExtResource("2_objfalltr")]
+position = Vector2(200, 20)
+
+[node name="inst_102654" parent="Instances" instance=ExtResource("3_objicecap")]
+position = Vector2(240, 140)
+
+[node name="inst_102655" parent="Instances" instance=ExtResource("9_objsolidl")]
+position = Vector2(0, 200)
+
+[node name="inst_102656" parent="Instances" instance=ExtResource("9_objsolidl")]
+position = Vector2(60, 80)
+
+[node name="inst_102657" parent="Instances" instance=ExtResource("6_objoverwo")]
+position = Vector2(270, 30)
+
+[node name="inst_102658" parent="Instances" instance=ExtResource("12_objtundra")]
+position = Vector2(140, 40)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsentry"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_sentrystation_bg.gd" id="1_objsentry"]
+
+[node name="obj_sentrystation_bg" type="Node2D"]
+script = ExtResource("1_objsentry")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_sanscheck_0.png")

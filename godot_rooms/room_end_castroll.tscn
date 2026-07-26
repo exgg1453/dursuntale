@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_end_cas"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_castroll.tscn" id="1_objcastro"]
+
+[node name="room_end_castroll" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113489" parent="Instances" instance=ExtResource("1_objcastro")]
+position = Vector2(16, 16)

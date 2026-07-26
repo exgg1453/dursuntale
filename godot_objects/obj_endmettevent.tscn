@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objendmet"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_endmettevent.gd" id="1_objendmet"]
+
+[node name="obj_endmettevent" type="Node2D"]
+script = ExtResource("1_objendmet")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_mett_individual_0.png")

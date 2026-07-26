@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcoream"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_coreambiencemusic.gd" id="1_objcoream"]
+
+[node name="obj_coreambiencemusic" type="Node2D"]
+script = ExtResource("1_objcoream")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtruel"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_true_lavawaver.gd" id="1_objtruel"]
+
+[node name="obj_true_lavawaver" type="Node2D"]
+script = ExtResource("1_objtruel")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/obj_hugelavawave_0.png")

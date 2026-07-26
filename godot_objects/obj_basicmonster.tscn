@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbasicm"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_basicmonster.gd" id="1_objbasicm"]
+
+[node name="obj_basicmonster" type="Node2D"]
+script = ExtResource("1_objbasicm")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_aaron_0.png")

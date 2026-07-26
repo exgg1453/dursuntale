@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objintrom"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_intromenu.gd" id="1_objintrom"]
+
+[node name="obj_intromenu" type="Node2D"]
+script = ExtResource("1_objintrom")

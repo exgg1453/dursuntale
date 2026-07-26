@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbombbu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bombbul.gd" id="1_objbombbu"]
+
+[node name="obj_bombbul" type="Node2D"]
+script = ExtResource("1_objbombbu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_bombd_0.png")

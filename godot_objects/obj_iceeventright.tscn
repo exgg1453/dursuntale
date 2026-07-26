@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objiceeve"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_iceeventright.gd" id="1_objiceeve"]
+
+[node name="obj_iceeventright" type="Node2D"]
+script = ExtResource("1_objiceeve")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_solidlong_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsidepl"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_sideplanebullet.gd" id="1_objsidepl"]
+
+[node name="obj_sideplanebullet" type="Node2D"]
+script = ExtResource("1_objsidepl")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_sideplanebullet_0.png")

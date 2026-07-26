@@ -1,0 +1,87 @@
+[gd_scene load_steps=14 format=3 uid="uid://room_ice_dog"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorBmusicfade.tscn" id="1_objdoorbm"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_iceroom_dog.tscn" id="2_objiceroo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_iceroom_fakedog.tscn" id="3_objiceroo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="4_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="5_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_npc_room.tscn" id="6_objnpcro"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="7_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_papcomputer.tscn" id="8_objpapcom"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room3.tscn" id="9_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room4.tscn" id="10_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidextall_2.tscn" id="11_objsolide"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidexwide.tscn" id="12_objsolide"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidsmall.tscn" id="13_objsolids"]
+
+[node name="room_ice_dog" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113054" parent="Instances" instance=ExtResource("11_objsolide")]
+position = Vector2(120, 180)
+
+[node name="inst_113055" parent="Instances" instance=ExtResource("11_objsolide")]
+position = Vector2(180, 180)
+
+[node name="inst_113056" parent="Instances" instance=ExtResource("11_objsolide")]
+position = Vector2(220, 85)
+
+[node name="inst_113057" parent="Instances" instance=ExtResource("11_objsolide")]
+position = Vector2(60, 60)
+
+[node name="inst_113058" parent="Instances" instance=ExtResource("11_objsolide")]
+position = Vector2(60, 140)
+
+[node name="inst_113059" parent="Instances" instance=ExtResource("4_objmainch")]
+position = Vector2(150, 150)
+
+[node name="inst_113060" parent="Instances" instance=ExtResource("5_objmarker")]
+position = Vector2(150, 190)
+
+[node name="inst_113061" parent="Instances" instance=ExtResource("1_objdoorbm")]
+position = Vector2(140, 230)
+
+[node name="inst_113062" parent="Instances" instance=ExtResource("1_objdoorbm")]
+position = Vector2(160, 230)
+
+[node name="inst_113063" parent="Instances" instance=ExtResource("8_objpapcom")]
+position = Vector2(160, 30)
+
+[node name="inst_113064" parent="Instances" instance=ExtResource("2_objiceroo")]
+position = Vector2(155, 115)
+
+[node name="inst_113065" parent="Instances" instance=ExtResource("6_objnpcro")]
+position = Vector2(90, 55)
+
+[node name="inst_113066" parent="Instances" instance=ExtResource("3_objiceroo")]
+position = Vector2(90, 150)
+
+[node name="inst_113067" parent="Instances" instance=ExtResource("9_objreadab")]
+position = Vector2(195, 150)
+
+[node name="inst_113068" parent="Instances" instance=ExtResource("10_objreadab")]
+position = Vector2(195, 105)
+
+[node name="inst_113069" parent="Instances" instance=ExtResource("13_objsolids")]
+position = Vector2(220, 160)
+
+[node name="inst_113070" parent="Instances" instance=ExtResource("13_objsolids")]
+position = Vector2(60, 40)
+
+[node name="inst_113071" parent="Instances" instance=ExtResource("12_objsolide")]
+position = Vector2(160, 65)
+
+[node name="inst_113072" parent="Instances" instance=ExtResource("12_objsolide")]
+position = Vector2(160, 45)
+
+[node name="inst_113073" parent="Instances" instance=ExtResource("12_objsolide")]
+position = Vector2(80, 40)
+
+[node name="inst_113074" parent="Instances" instance=ExtResource("12_objsolide")]
+position = Vector2(40, 180)
+
+[node name="inst_113075" parent="Instances" instance=ExtResource("12_objsolide")]
+position = Vector2(200, 180)
+
+[node name="inst_113076" parent="Instances" instance=ExtResource("7_objoverwo")]
+position = Vector2(20, 20)

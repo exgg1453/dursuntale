@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_f_intro"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_gameintro_fake.tscn" id="1_objgamein"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_interactable.tscn" id="2_objintera"]
+
+[node name="room_f_intro" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113502" parent="Instances" instance=ExtResource("1_objgamein")]
+position = Vector2(0, 0)
+
+[node name="inst_113503" parent="Instances" instance=ExtResource("2_objintera")]
+position = Vector2(0, 0)

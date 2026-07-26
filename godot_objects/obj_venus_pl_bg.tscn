@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objvenus"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_venus_pl_bg.gd" id="1_objvenus"]
+
+[node name="obj_venus_pl_bg" type="Node2D"]
+script = ExtResource("1_objvenus")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_venus_bg_0.png")

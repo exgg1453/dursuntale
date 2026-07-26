@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_afinalt"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_afinal_body.tscn" id="1_objafinal"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_heart_another.tscn" id="2_objheart"]
+
+[node name="room_afinaltest" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114035" parent="Instances" instance=ExtResource("1_objafinal")]
+position = Vector2(320, 48)
+
+[node name="inst_114036" parent="Instances" instance=ExtResource("2_objheart")]
+position = Vector2(320, 368)

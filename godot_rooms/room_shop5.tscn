@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_shop5"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_shop5.tscn" id="1_objshop5"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_shopmouth1.tscn" id="2_objshopmo"]
+
+[node name="room_shop5" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113999" parent="Instances" instance=ExtResource("1_objshop5")]
+position = Vector2(0, 0)
+
+[node name="inst_114000" parent="Instances" instance=ExtResource("2_objshopmo")]
+position = Vector2(128, 48)

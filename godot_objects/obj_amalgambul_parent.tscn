@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objamalga"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_amalgambul_parent.gd" id="1_objamalga"]
+
+[node name="obj_amalgambul_parent" type="Node2D"]
+script = ExtResource("1_objamalga")

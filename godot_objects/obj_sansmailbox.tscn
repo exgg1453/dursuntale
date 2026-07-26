@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsansma"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_sansmailbox.gd" id="1_objsansma"]
+
+[node name="obj_sansmailbox" type="CharacterBody2D"]
+script = ExtResource("1_objsansma")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_sansmailbox_0.png")

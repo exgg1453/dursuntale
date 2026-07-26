@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objvertcr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_vertcroissant.gd" id="1_objvertcr"]
+
+[node name="obj_vertcroissant" type="Node2D"]
+script = ExtResource("1_objvertcr")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_croissantr_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objribbon"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_ribbon_pickup.gd" id="1_objribbon"]
+
+[node name="obj_ribbon_pickup" type="CharacterBody2D"]
+script = ExtResource("1_objribbon")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_ribbon_0.png")

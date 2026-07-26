@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objflowey"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_floweybullet_parent.gd" id="1_objflowey"]
+
+[node name="obj_floweybullet_parent" type="Node2D"]
+script = ExtResource("1_objflowey")
+
+[node name="Alarm0" type="Timer" parent="."]
+one_shot = true

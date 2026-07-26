@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgyftro"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_gyftrotnpc.gd" id="1_objgyftro"]
+
+[node name="obj_gyftrotnpc" type="Node2D"]
+script = ExtResource("1_objgyftro")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_gyftrotnpc_0.png")

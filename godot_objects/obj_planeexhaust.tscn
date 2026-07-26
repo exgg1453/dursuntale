@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objplanee"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_planeexhaust.gd" id="1_objplanee"]
+
+[node name="obj_planeexhaust" type="Node2D"]
+script = ExtResource("1_objplanee")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_tsunderplanecloud_0.png")

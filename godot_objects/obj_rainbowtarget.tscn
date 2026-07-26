@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objrainbo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_rainbowtarget.gd" id="1_objrainbo"]
+
+[node name="obj_rainbowtarget" type="Node2D"]
+script = ExtResource("1_objrainbo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_rainbowtarget_0.png")

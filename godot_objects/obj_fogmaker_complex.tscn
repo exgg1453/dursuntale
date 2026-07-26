@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfogmak"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_fogmaker_complex.gd" id="1_objfogmak"]
+
+[node name="obj_fogmaker_complex" type="Node2D"]
+script = ExtResource("1_objfogmak")

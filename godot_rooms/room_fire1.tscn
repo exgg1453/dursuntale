@@ -1,0 +1,86 @@
+[gd_scene load_steps=16 format=3 uid="uid://room_fire1"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_autowater.tscn" id="1_objautowa"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorA.tscn" id="2_objdoora"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorB.tscn" id="3_objdoorb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_hotlandparalava.tscn" id="4_objhotlan"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_hotlandrock_bg.tscn" id="5_objhotlan"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_lavaoogmusic.tscn" id="6_objlavaoo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="7_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="8_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerB.tscn" id="9_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="10_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sans_sleep.tscn" id="11_objsanss"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sentrystation_bg.tscn" id="12_objsentry"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="13_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidwide.tscn" id="14_objsolidw"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_undynea_chaser.tscn" id="15_objundyne"]
+
+[node name="room_fire1" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_107401" parent="Instances" instance=ExtResource("5_objhotlan")]
+position = Vector2(226, 18)
+
+[node name="inst_107402" parent="Instances" instance=ExtResource("4_objhotlan")]
+position = Vector2(252, 22)
+
+[node name="inst_107403" parent="Instances" instance=ExtResource("7_objmainch")]
+position = Vector2(140, 120)
+
+[node name="inst_107404" parent="Instances" instance=ExtResource("12_objsentry")]
+position = Vector2(130, 34)
+
+[node name="inst_107405" parent="Instances" instance=ExtResource("3_objdoorb")]
+position = Vector2(0, 120)
+
+[node name="inst_107406" parent="Instances" instance=ExtResource("3_objdoorb")]
+position = Vector2(0, 140)
+
+[node name="inst_107407" parent="Instances" instance=ExtResource("8_objmarker")]
+position = Vector2(20, 115)
+
+[node name="inst_107408" parent="Instances" instance=ExtResource("15_objundyne")]
+position = Vector2(60, 80)
+
+[node name="inst_107409" parent="Instances" instance=ExtResource("2_objdoora")]
+position = Vector2(500, 120)
+
+[node name="inst_107410" parent="Instances" instance=ExtResource("9_objmarker")]
+position = Vector2(480, 108)
+
+[node name="inst_107411" parent="Instances" instance=ExtResource("11_objsanss")]
+position = Vector2(146, 66)
+
+[node name="inst_107412" parent="Instances" instance=ExtResource("6_objlavaoo")]
+position = Vector2(78, 16)
+
+[node name="inst_107413" parent="Instances" instance=ExtResource("1_objautowa")]
+position = Vector2(388, 26)
+
+[node name="inst_107414" parent="Instances" instance=ExtResource("13_objsolidl")]
+position = Vector2(0, 155)
+
+[node name="inst_107415" parent="Instances" instance=ExtResource("13_objsolidl")]
+position = Vector2(200, 100)
+
+[node name="inst_107416" parent="Instances" instance=ExtResource("14_objsolidw")]
+position = Vector2(80, 100)
+
+[node name="inst_107417" parent="Instances" instance=ExtResource("14_objsolidw")]
+position = Vector2(40, 100)
+
+[node name="inst_107418" parent="Instances" instance=ExtResource("14_objsolidw")]
+position = Vector2(0, 100)
+
+[node name="inst_107419" parent="Instances" instance=ExtResource("14_objsolidw")]
+position = Vector2(120, 86)
+
+[node name="inst_107420" parent="Instances" instance=ExtResource("14_objsolidw")]
+position = Vector2(160, 84)
+
+[node name="inst_107421" parent="Instances" instance=ExtResource("13_objsolidl")]
+position = Vector2(240, 140)
+
+[node name="inst_107422" parent="Instances" instance=ExtResource("10_objoverwo")]
+position = Vector2(20, 20)

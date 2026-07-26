@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objhgbod"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_hg_body.gd" id="1_objhgbod"]
+
+[node name="obj_hg_body" type="Node2D"]
+script = ExtResource("1_objhgbod")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_hypergoner_0.png")

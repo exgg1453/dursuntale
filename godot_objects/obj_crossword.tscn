@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcrossw"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_crossword.gd" id="1_objcrossw"]
+
+[node name="obj_crossword" type="Node2D"]
+script = ExtResource("1_objcrossw")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_notepaper_0.png")

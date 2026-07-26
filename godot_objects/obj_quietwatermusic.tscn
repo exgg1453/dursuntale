@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objquietw"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_quietwatermusic.gd" id="1_objquietw"]
+
+[node name="obj_quietwatermusic" type="Node2D"]
+script = ExtResource("1_objquietw")

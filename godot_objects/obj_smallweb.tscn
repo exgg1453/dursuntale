@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsmallw"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_smallweb.gd" id="1_objsmallw"]
+
+[node name="obj_smallweb" type="CharacterBody2D"]
+script = ExtResource("1_objsmallw")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_smallweb_0.png")

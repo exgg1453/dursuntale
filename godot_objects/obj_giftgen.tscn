@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgiftge"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_giftgen.gd" id="1_objgiftge"]
+
+[node name="obj_giftgen" type="Node2D"]
+script = ExtResource("1_objgiftge")

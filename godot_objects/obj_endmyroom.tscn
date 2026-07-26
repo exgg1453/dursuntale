@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objendmyr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_endmyroom.gd" id="1_objendmyr"]
+
+[node name="obj_endmyroom" type="Node2D"]
+script = ExtResource("1_objendmyr")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_myroom_doorbg_0.png")

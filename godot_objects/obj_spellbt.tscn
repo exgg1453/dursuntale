@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objspellb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_spellbt.gd" id="1_objspellb"]
+
+[node name="obj_spellbt" type="Node2D"]
+script = ExtResource("1_objspellb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_spellbt_0.png")

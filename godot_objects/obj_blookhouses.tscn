@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objblookh"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_blookhouses.gd" id="1_objblookh"]
+
+[node name="obj_blookhouses" type="Node2D"]
+script = ExtResource("1_objblookh")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_blookhouses_0.png")

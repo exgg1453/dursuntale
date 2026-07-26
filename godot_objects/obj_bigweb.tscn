@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbigweb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bigweb.gd" id="1_objbigweb"]
+
+[node name="obj_bigweb" type="CharacterBody2D"]
+script = ExtResource("1_objbigweb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_bigweb_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwhimsa"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_whimsalot_body.gd" id="1_objwhimsa"]
+
+[node name="obj_whimsalot_body" type="Node2D"]
+script = ExtResource("1_objwhimsa")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_whimsalot_0.png")

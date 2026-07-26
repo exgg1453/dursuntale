@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objpapcou"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_papcouch.gd" id="1_objpapcou"]
+
+[node name="obj_papcouch" type="Node2D"]
+script = ExtResource("1_objpapcou")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_papcouch_0.png")

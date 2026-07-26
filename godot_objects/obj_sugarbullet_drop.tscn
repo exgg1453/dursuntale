@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsugarb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_sugarbullet_drop.gd" id="1_objsugarb"]
+
+[node name="obj_sugarbullet_drop" type="Node2D"]
+script = ExtResource("1_objsugarb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_sugarbullet_hit_0.png")

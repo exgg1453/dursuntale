@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objintera"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_interactable.gd" id="1_objintera"]
+
+[node name="obj_interactable" type="Node2D"]
+script = ExtResource("1_objintera")

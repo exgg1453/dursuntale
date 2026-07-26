@@ -1,0 +1,57 @@
+[gd_scene load_steps=14 format=3 uid="uid://room_battle"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_battlebg.tscn" id="1_objbattle"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_battlecontroller.tscn" id="2_objbattle"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_battlefader.tscn" id="3_objbattle"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_dborder.tscn" id="4_objdborde"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_fightbt.tscn" id="5_objfightb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_heart.tscn" id="6_objheart"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_hpname.tscn" id="7_objhpname"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_itembt.tscn" id="8_objitembt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_lborder.tscn" id="9_objlborde"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_rborder.tscn" id="10_objrborde"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sparebt.tscn" id="11_objspareb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_talkbt.tscn" id="12_objtalkbt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_uborder.tscn" id="13_objuborde"]
+
+[node name="room_battle" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113953" parent="Instances" instance=ExtResource("1_objbattle")]
+position = Vector2(0, 0)
+
+[node name="inst_113954" parent="Instances" instance=ExtResource("5_objfightb")]
+position = Vector2(32, 432)
+
+[node name="inst_113955" parent="Instances" instance=ExtResource("12_objtalkbt")]
+position = Vector2(185, 432)
+
+[node name="inst_113956" parent="Instances" instance=ExtResource("8_objitembt")]
+position = Vector2(345, 432)
+
+[node name="inst_113957" parent="Instances" instance=ExtResource("11_objspareb")]
+position = Vector2(500, 432)
+
+[node name="inst_113958" parent="Instances" instance=ExtResource("6_objheart")]
+position = Vector2(362, 346)
+
+[node name="inst_113959" parent="Instances" instance=ExtResource("7_objhpname")]
+position = Vector2(240, 400)
+
+[node name="inst_113960" parent="Instances" instance=ExtResource("2_objbattle")]
+position = Vector2(556, 82)
+
+[node name="inst_113961" parent="Instances" instance=ExtResource("13_objuborde")]
+position = Vector2(32, 250)
+
+[node name="inst_113962" parent="Instances" instance=ExtResource("9_objlborde")]
+position = Vector2(32, 385)
+
+[node name="inst_113963" parent="Instances" instance=ExtResource("4_objdborde")]
+position = Vector2(32, 385)
+
+[node name="inst_113964" parent="Instances" instance=ExtResource("10_objrborde")]
+position = Vector2(602, 385)
+
+[node name="inst_113965" parent="Instances" instance=ExtResource("3_objbattle")]
+position = Vector2(0, 0)

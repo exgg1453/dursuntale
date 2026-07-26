@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objloopbu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_loopbulletgrowgen.gd" id="1_objloopbu"]
+
+[node name="obj_loopbulletgrowgen" type="Node2D"]
+script = ExtResource("1_objloopbu")

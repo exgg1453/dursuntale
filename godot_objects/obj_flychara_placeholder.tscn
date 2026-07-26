@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objflycha"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_flychara_placeholder.gd" id="1_objflycha"]
+
+[node name="obj_flychara_placeholder" type="Node2D"]
+script = ExtResource("1_objflycha")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_flychara_placeholder_0.png")

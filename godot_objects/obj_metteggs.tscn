@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmetteg"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_metteggs.gd" id="1_objmetteg"]
+
+[node name="obj_metteggs" type="Node2D"]
+script = ExtResource("1_objmetteg")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_mettflour_0.png")

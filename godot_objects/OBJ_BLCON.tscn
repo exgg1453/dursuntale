@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objblcon"]
+
+[ext_resource type="Script" path="res://godot_objects/OBJ_BLCON.gd" id="1_objblcon"]
+
+[node name="OBJ_BLCON" type="Node2D"]
+script = ExtResource("1_objblcon")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_blconsm_0.png")

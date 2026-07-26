@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_emptywh"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_white_ender.tscn" id="1_objwhite"]
+
+[node name="room_emptywhite" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114018" parent="Instances" instance=ExtResource("1_objwhite")]
+position = Vector2(0, 0)

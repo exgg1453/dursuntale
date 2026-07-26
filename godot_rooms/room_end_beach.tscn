@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_end_bea"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_endbeachanim.tscn" id="1_objendbea"]
+
+[node name="room_end_beach" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113491" parent="Instances" instance=ExtResource("1_objendbea")]
+position = Vector2(94, 64)

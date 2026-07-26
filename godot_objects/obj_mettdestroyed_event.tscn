@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmettde"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_mettdestroyed_event.gd" id="1_objmettde"]
+
+[node name="obj_mettdestroyed_event" type="Node2D"]
+script = ExtResource("1_objmettde")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_event_0.png")

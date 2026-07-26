@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtorint"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_torinteractable2.gd" id="1_objtorint"]
+
+[node name="obj_torinteractable2" type="CharacterBody2D"]
+script = ExtResource("1_objtorint")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_toriel_l_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfinale"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_finalelevatorpanel.gd" id="1_objfinale"]
+
+[node name="obj_finalelevatorpanel" type="Node2D"]
+script = ExtResource("1_objfinale")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_elevatorpanel_0.png")

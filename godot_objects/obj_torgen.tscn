@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtorgen"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_torgen.gd" id="1_objtorgen"]
+
+[node name="obj_torgen" type="Node2D"]
+script = ExtResource("1_objtorgen")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_torielboss_side_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbgglo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bg_glower.gd" id="1_objbgglo"]
+
+[node name="obj_bg_glower" type="Node2D"]
+script = ExtResource("1_objbgglo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_shop1_bg_0.png")

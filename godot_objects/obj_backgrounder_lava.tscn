@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbackgr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_backgrounder_lava.gd" id="1_objbackgr"]
+
+[node name="obj_backgrounder_lava" type="Node2D"]
+script = ExtResource("1_objbackgr")

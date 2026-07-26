@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objclawbu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_clawbullet_gravityfailure.gd" id="1_objclawbu"]
+
+[node name="obj_clawbullet_gravityfailure" type="Node2D"]
+script = ExtResource("1_objclawbu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_clawbullet_0.png")

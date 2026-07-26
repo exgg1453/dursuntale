@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsolidr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_solidrailing2.gd" id="1_objsolidr"]
+
+[node name="obj_solidrailing2" type="CharacterBody2D"]
+script = ExtResource("1_objsolidr")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_railing2_0.png")

@@ -1,0 +1,70 @@
+[gd_scene load_steps=12 format=3 uid="uid://room_truelab"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorA.tscn" id="1_objdoora"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorBmusicfade.tscn" id="2_objdoorbm"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_labdoor.tscn" id="3_objlabdoo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="4_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="5_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerB.tscn" id="6_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="7_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidextall_2.tscn" id="8_objsolide"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidexwide.tscn" id="9_objsolide"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidsmall.tscn" id="10_objsolids"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidwide.tscn" id="11_objsolidw"]
+
+[node name="room_truelab_elevator" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_112412" parent="Instances" instance=ExtResource("3_objlabdoo")]
+position = Vector2(120, 60)
+
+[node name="inst_112413" parent="Instances" instance=ExtResource("8_objsolide")]
+position = Vector2(40, 120)
+
+[node name="inst_112414" parent="Instances" instance=ExtResource("4_objmainch")]
+position = Vector2(120, 140)
+
+[node name="inst_112415" parent="Instances" instance=ExtResource("1_objdoora")]
+position = Vector2(300, 140)
+
+[node name="inst_112416" parent="Instances" instance=ExtResource("1_objdoora")]
+position = Vector2(300, 160)
+
+[node name="inst_112417" parent="Instances" instance=ExtResource("6_objmarker")]
+position = Vector2(280, 140)
+
+[node name="inst_112418" parent="Instances" instance=ExtResource("10_objsolids")]
+position = Vector2(60, 100)
+
+[node name="inst_112419" parent="Instances" instance=ExtResource("10_objsolids")]
+position = Vector2(220, 200)
+
+[node name="inst_112420" parent="Instances" instance=ExtResource("2_objdoorbm")]
+position = Vector2(130, 95)
+
+[node name="inst_112421" parent="Instances" instance=ExtResource("5_objmarker")]
+position = Vector2(130, 110)
+
+[node name="inst_112422" parent="Instances" instance=ExtResource("9_objsolide")]
+position = Vector2(60, 200)
+
+[node name="inst_112423" parent="Instances" instance=ExtResource("9_objsolide")]
+position = Vector2(140, 200)
+
+[node name="inst_112424" parent="Instances" instance=ExtResource("9_objsolide")]
+position = Vector2(240, 180)
+
+[node name="inst_112425" parent="Instances" instance=ExtResource("9_objsolide")]
+position = Vector2(240, 120)
+
+[node name="inst_112426" parent="Instances" instance=ExtResource("11_objsolidw")]
+position = Vector2(200, 100)
+
+[node name="inst_112427" parent="Instances" instance=ExtResource("11_objsolidw")]
+position = Vector2(160, 100)
+
+[node name="inst_112428" parent="Instances" instance=ExtResource("11_objsolidw")]
+position = Vector2(80, 100)
+
+[node name="inst_112429" parent="Instances" instance=ExtResource("7_objoverwo")]
+position = Vector2(20, 20)

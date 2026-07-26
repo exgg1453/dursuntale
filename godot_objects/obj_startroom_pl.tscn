@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objstartr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_startroom_pl.gd" id="1_objstartr"]
+
+[node name="obj_startroom_pl" type="Node2D"]
+script = ExtResource("1_objstartr")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgreens"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_greenswitch_1.gd" id="1_objgreens"]
+
+[node name="obj_greenswitch_1" type="CharacterBody2D"]
+script = ExtResource("1_objgreens")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_colorswitch_0.png")

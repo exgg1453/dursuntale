@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bltclawbu"]
+
+[ext_resource type="Script" path="res://godot_objects/blt_clawbullet_white.gd" id="1_bltclawbu"]
+
+[node name="blt_clawbullet_white" type="Node2D"]
+script = ExtResource("1_bltclawbu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_rotclawbullet_0.png")

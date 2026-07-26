@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objhotlan"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_hotland_bottomedge.gd" id="1_objhotlan"]
+
+[node name="obj_hotland_bottomedge" type="Node2D"]
+script = ExtResource("1_objhotlan")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_hotland_leftedge_0.png")

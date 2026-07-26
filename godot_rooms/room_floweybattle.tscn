@@ -1,0 +1,37 @@
+[gd_scene load_steps=9 format=3 uid="uid://room_floweyb"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_battlefader.tscn" id="1_objbattle"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_dborder.tscn" id="2_objdborde"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_fakeheart.tscn" id="3_objfakehe"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_floweybattle1.tscn" id="4_objflowey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_floweydraw.tscn" id="5_objflowey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_lborder.tscn" id="6_objlborde"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_rborder.tscn" id="7_objrborde"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_uborder.tscn" id="8_objuborde"]
+
+[node name="room_floweybattle" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113966" parent="Instances" instance=ExtResource("5_objflowey")]
+position = Vector2(21, 20)
+
+[node name="inst_113967" parent="Instances" instance=ExtResource("4_objflowey")]
+position = Vector2(281, 134)
+
+[node name="inst_113968" parent="Instances" instance=ExtResource("3_objfakehe")]
+position = Vector2(308, 312)
+
+[node name="inst_113969" parent="Instances" instance=ExtResource("6_objlborde")]
+position = Vector2(220, 380)
+
+[node name="inst_113970" parent="Instances" instance=ExtResource("2_objdborde")]
+position = Vector2(220, 380)
+
+[node name="inst_113971" parent="Instances" instance=ExtResource("8_objuborde")]
+position = Vector2(220, 255)
+
+[node name="inst_113972" parent="Instances" instance=ExtResource("7_objrborde")]
+position = Vector2(405, 380)
+
+[node name="inst_113973" parent="Instances" instance=ExtResource("1_objbattle")]
+position = Vector2(0, 0)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbgpipe"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bgpipe.gd" id="1_objbgpipe"]
+
+[node name="obj_bgpipe" type="Node2D"]
+script = ExtResource("1_objbgpipe")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_bgpipe_0.png")

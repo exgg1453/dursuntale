@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objspearb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_spearbullet_follow.gd" id="1_objspearb"]
+
+[node name="obj_spearbullet_follow" type="Node2D"]
+script = ExtResource("1_objspearb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_whitespearbullet_0.png")

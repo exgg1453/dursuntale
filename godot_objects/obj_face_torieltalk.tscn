@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfacet"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_face_torieltalk.gd" id="1_objfacet"]
+
+[node name="obj_face_torieltalk" type="Node2D"]
+script = ExtResource("1_objfacet")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_face_torielhappytalk_0.png")

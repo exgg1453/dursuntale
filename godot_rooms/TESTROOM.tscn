@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://testroom"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/OBJ_BLCON.tscn" id="1_objblcon"]
+[ext_resource type="PackedScene" path="res://godot_objects/OBJ_WRITERCREATOR.tscn" id="2_objwriter"]
+
+[node name="TESTROOM" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113108" parent="Instances" instance=ExtResource("1_objblcon")]
+position = Vector2(192, 128)
+
+[node name="inst_113109" parent="Instances" instance=ExtResource("1_objblcon")]
+position = Vector2(0, 128)
+
+[node name="inst_113110" parent="Instances" instance=ExtResource("1_objblcon")]
+position = Vector2(400, 128)
+
+[node name="inst_113111" parent="Instances" instance=ExtResource("2_objwriter")]
+position = Vector2(144, 48)

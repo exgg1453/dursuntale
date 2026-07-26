@@ -1,0 +1,41 @@
+[gd_scene load_steps=10 format=3 uid="uid://room_outside"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_alphys_friendc.tscn" id="1_objalphys"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_asgore_friendc.tscn" id="2_objasgore"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="3_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_outsideworld_event.tscn" id="4_objoutsid"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="5_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_papyrus_friendc.tscn" id="6_objpapyru"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sans_friendc.tscn" id="7_objsansf"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_toriel_friendc.tscn" id="8_objtoriel"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_undyne_friendc.tscn" id="9_objundyne"]
+
+[node name="room_outsideworld" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_112343" parent="Instances" instance=ExtResource("3_objmainch")]
+position = Vector2(70, 94)
+
+[node name="inst_112344" parent="Instances" instance=ExtResource("8_objtoriel")]
+position = Vector2(85, 70)
+
+[node name="inst_112345" parent="Instances" instance=ExtResource("7_objsansf")]
+position = Vector2(120, 93)
+
+[node name="inst_112346" parent="Instances" instance=ExtResource("6_objpapyru")]
+position = Vector2(150, 81)
+
+[node name="inst_112347" parent="Instances" instance=ExtResource("1_objalphys")]
+position = Vector2(210, 90)
+
+[node name="inst_112348" parent="Instances" instance=ExtResource("2_objasgore")]
+position = Vector2(240, 62)
+
+[node name="inst_112349" parent="Instances" instance=ExtResource("9_objundyne")]
+position = Vector2(185, 70)
+
+[node name="inst_112350" parent="Instances" instance=ExtResource("4_objoutsid")]
+position = Vector2(45, 170)
+
+[node name="inst_112351" parent="Instances" instance=ExtResource("5_objoverwo")]
+position = Vector2(20, 20)

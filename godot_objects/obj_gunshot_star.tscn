@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgunsho"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_gunshot_star.gd" id="1_objgunsho"]
+
+[node name="obj_gunshot_star" type="Node2D"]
+script = ExtResource("1_objgunsho")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_gunshot_stab_0.png")

@@ -1,0 +1,43 @@
+# Auto-converted from GameMaker: obj_icecave_fader
+extends Node2D
+
+func _ready():
+	sprite_index= 996/* spr_pixblk */
+	scale.x= 900
+	scale.y= 900
+	x= view_xview[0] - 10
+	y= view_yview[0] - 10
+	oalpha= 0.9
+	top= 100
+
+func _process_begin(delta: float):
+	if(view_yview[0] <= 0) {
+	    modulate.a= 0
+	    oalpha= 0
+	}
+	if(view_yview[0] > 0) {
+	    a= oalpha - top / view_yview[0] * oalpha
+	    if(a > 0) modulate.a= a
+	    else  modulate.a= 0
+	}
+
+func _spawn(scene_name: String, px: float, py: float) -> Node:
+	var scene = load("res://godot_objects/" + scene_name + ".tscn")
+	if scene:
+		var inst = scene.instantiate()
+		inst.position = Vector2(px, py)
+		get_parent().add_child(inst)
+		return inst
+	return null
+
+func _play_sound(snd: String) -> void:
+	var p := AudioStreamPlayer.new()
+	add_child(p)
+	var s = load("res://sound/audio/" + snd + ".ogg")
+	if not s: s = load("res://sound/audio/" + snd + ".wav")
+	if s:
+		p.stream = s; p.play()
+		p.finished.connect(p.queue_free)
+
+func _stop_sound(_snd: String) -> void:
+	pass  # TODO: track AudioStreamPlayer by name

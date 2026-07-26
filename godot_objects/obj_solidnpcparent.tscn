@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsolidn"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_solidnpcparent.gd" id="1_objsolidn"]
+
+[node name="obj_solidnpcparent" type="CharacterBody2D"]
+script = ExtResource("1_objsolidn")

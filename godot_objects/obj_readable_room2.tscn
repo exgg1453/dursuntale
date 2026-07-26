@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objreadab"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_readable_room2.gd" id="1_objreadab"]
+
+[node name="obj_readable_room2" type="Node2D"]
+script = ExtResource("1_objreadab")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_interactable_0.png")

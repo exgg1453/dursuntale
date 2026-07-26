@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmelone"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_meloneye.gd" id="1_objmelone"]
+
+[node name="obj_meloneye" type="Node2D"]
+script = ExtResource("1_objmelone")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_melonbullet_0.png")

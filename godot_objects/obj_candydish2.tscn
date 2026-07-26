@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcandyd"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_candydish2.gd" id="1_objcandyd"]
+
+[node name="obj_candydish2" type="CharacterBody2D"]
+script = ExtResource("1_objcandyd")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_candydish_bad_0.png")

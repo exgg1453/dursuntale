@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcoresi"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_coresign.gd" id="1_objcoresi"]
+
+[node name="obj_coresign" type="Node2D"]
+script = ExtResource("1_objcoresi")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_coresign_0.png")

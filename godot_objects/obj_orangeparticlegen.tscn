@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objorange"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_orangeparticlegen.gd" id="1_objorange"]
+
+[node name="obj_orangeparticlegen" type="Node2D"]
+script = ExtResource("1_objorange")

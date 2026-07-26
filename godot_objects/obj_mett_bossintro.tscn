@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmettb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_mett_bossintro.gd" id="1_objmettb"]
+
+[node name="obj_mett_bossintro" type="Node2D"]
+script = ExtResource("1_objmettb")

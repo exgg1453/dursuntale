@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_end_mte"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_ebottfadein.tscn" id="1_objebottf"]
+
+[node name="room_end_mtebott" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113494" parent="Instances" instance=ExtResource("1_objebottf")]
+position = Vector2(96, 96)

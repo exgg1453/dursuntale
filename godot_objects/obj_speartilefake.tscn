@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objspeart"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_speartilefake.gd" id="1_objspeart"]
+
+[node name="obj_speartilefake" type="Node2D"]
+script = ExtResource("1_objspeart")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_tilespear_fullbottom_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objultima"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_ultimatarget.gd" id="1_objultima"]
+
+[node name="obj_ultimatarget" type="Node2D"]
+script = ExtResource("1_objultima")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_redtarget_0.png")

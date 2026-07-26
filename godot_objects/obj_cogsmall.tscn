@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcogsma"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_cogsmall.gd" id="1_objcogsma"]
+
+[node name="obj_cogsmall" type="Node2D"]
+script = ExtResource("1_objcogsma")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_cogsmall_e_0.png")

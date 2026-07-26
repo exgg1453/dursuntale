@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtorhea"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_torheart.gd" id="1_objtorhea"]
+
+[node name="obj_torheart" type="Node2D"]
+script = ExtResource("1_objtorhea")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_torheart_0.png")

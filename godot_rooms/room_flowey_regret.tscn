@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_flowey_"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_endflowey_regret.tscn" id="1_objendflo"]
+
+[node name="room_flowey_regret" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114015" parent="Instances" instance=ExtResource("1_objendflo")]
+position = Vector2(0, 0)

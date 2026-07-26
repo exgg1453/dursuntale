@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objitemsw"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_itemswapper.gd" id="1_objitemsw"]
+
+[node name="obj_itemswapper" type="Node2D"]
+script = ExtResource("1_objitemsw")

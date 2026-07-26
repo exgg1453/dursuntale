@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwizard"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_wizardbody.gd" id="1_objwizard"]
+
+[node name="obj_wizardbody" type="Node2D"]
+script = ExtResource("1_objwizard")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_wizard_full_0.png")

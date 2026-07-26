@@ -1,0 +1,67 @@
+[gd_scene load_steps=12 format=3 uid="uid://room_tundra_"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_chewtoy.tscn" id="1_objchewto"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_dogfood.tscn" id="2_objdogfoo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doggiebed.tscn" id="3_objdoggie"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_door_v.tscn" id="4_objdoorv"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="5_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="6_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="7_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall.tscn" id="8_objsolidt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidtall_2.tscn" id="9_objsolidt"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_spagnot.tscn" id="10_objspagno"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_tundragatebar.tscn" id="11_objtundra"]
+
+[node name="room_tundra_garage" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_103489" parent="Instances" instance=ExtResource("8_objsolidt")]
+position = Vector2(40, 20)
+
+[node name="inst_103490" parent="Instances" instance=ExtResource("8_objsolidt")]
+position = Vector2(240, 20)
+
+[node name="inst_103491" parent="Instances" instance=ExtResource("9_objsolidt")]
+position = Vector2(100, 200)
+
+[node name="inst_103492" parent="Instances" instance=ExtResource("5_objmainch")]
+position = Vector2(140, 100)
+
+[node name="inst_103493" parent="Instances" instance=ExtResource("2_objdogfoo")]
+position = Vector2(180, 80)
+
+[node name="inst_103494" parent="Instances" instance=ExtResource("3_objdoggie")]
+position = Vector2(200, 120)
+
+[node name="inst_103495" parent="Instances" instance=ExtResource("10_objspagno")]
+position = Vector2(140, 60)
+
+[node name="inst_103496" parent="Instances" instance=ExtResource("1_objchewto")]
+position = Vector2(140, 140)
+
+[node name="inst_103497" parent="Instances" instance=ExtResource("4_objdoorv")]
+position = Vector2(60, 220)
+
+[node name="inst_103498" parent="Instances" instance=ExtResource("4_objdoorv")]
+position = Vector2(80, 220)
+
+[node name="inst_103499" parent="Instances" instance=ExtResource("11_objtundra")]
+position = Vector2(80, 36)
+
+[node name="inst_103500" parent="Instances" instance=ExtResource("11_objtundra")]
+position = Vector2(90, 64)
+
+[node name="inst_103501" parent="Instances" instance=ExtResource("11_objtundra")]
+position = Vector2(100, 92)
+
+[node name="inst_103502" parent="Instances" instance=ExtResource("11_objtundra")]
+position = Vector2(110, 124)
+
+[node name="inst_103503" parent="Instances" instance=ExtResource("7_objsolidl")]
+position = Vector2(40, 40)
+
+[node name="inst_103504" parent="Instances" instance=ExtResource("7_objsolidl")]
+position = Vector2(100, 180)
+
+[node name="inst_103505" parent="Instances" instance=ExtResource("6_objoverwo")]
+position = Vector2(20, 20)

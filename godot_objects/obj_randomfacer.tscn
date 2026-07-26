@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objrandom"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_randomfacer.gd" id="1_objrandom"]
+
+[node name="obj_randomfacer" type="Node2D"]
+script = ExtResource("1_objrandom")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_tvinside_old_0.png")

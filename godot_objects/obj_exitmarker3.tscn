@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objexitma"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_exitmarker3.gd" id="1_objexitma"]
+
+[node name="obj_exitmarker3" type="Node2D"]
+script = ExtResource("1_objexitma")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_bringit"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_bringitinguys.tscn" id="1_objbringi"]
+
+[node name="room_bringitinguys" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114027" parent="Instances" instance=ExtResource("1_objbringi")]
+position = Vector2(144, 240)

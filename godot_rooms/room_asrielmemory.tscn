@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_asrielm"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_asrielpanels.tscn" id="1_objasriel"]
+
+[node name="room_asrielmemory" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114031" parent="Instances" instance=ExtResource("1_objasriel")]
+position = Vector2(80, 144)

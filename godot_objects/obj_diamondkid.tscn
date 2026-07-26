@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdiamon"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_diamondkid.gd" id="1_objdiamon"]
+
+[node name="obj_diamondkid" type="CharacterBody2D"]
+script = ExtResource("1_objdiamon")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_diamondboy_0.png")

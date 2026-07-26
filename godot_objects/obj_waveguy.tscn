@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwavegu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_waveguy.gd" id="1_objwavegu"]
+
+[node name="obj_waveguy" type="Node2D"]
+script = ExtResource("1_objwavegu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_darkman_l_0.png")

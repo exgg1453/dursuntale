@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdiscob"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_discoball.gd" id="1_objdiscob"]
+
+[node name="obj_discoball" type="Node2D"]
+script = ExtResource("1_objdiscob")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_discoball_0.png")

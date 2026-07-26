@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_introst"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_introimage.tscn" id="1_objintroi"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_unfader.tscn" id="2_objunfade"]
+
+[node name="room_introstory" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_100002" parent="Instances" instance=ExtResource("1_objintroi")]
+position = Vector2(0, 0)
+
+[node name="inst_100003" parent="Instances" instance=ExtResource("2_objunfade")]
+position = Vector2(288, 176)
+
+[node name="inst_100004" parent="Instances" instance=ExtResource("2_objunfade")]
+position = Vector2(16, 16)

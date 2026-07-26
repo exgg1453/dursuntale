@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbutter"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_butterflyhead.gd" id="1_objbutter"]
+
+[node name="obj_butterflyhead" type="Node2D"]
+script = ExtResource("1_objbutter")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_strangeman_headless_walk_0.png")

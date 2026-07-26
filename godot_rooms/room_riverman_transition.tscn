@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://room_riverma"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_dogboat_thing.tscn" id="1_objdogboa"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="2_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerX.tscn" id="3_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="4_objoverwo"]
+
+[node name="room_riverman_transition" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114001" parent="Instances" instance=ExtResource("1_objdogboa")]
+position = Vector2(355, 125)
+
+[node name="inst_114002" parent="Instances" instance=ExtResource("2_objmainch")]
+position = Vector2(140, 100)
+
+[node name="inst_114003" parent="Instances" instance=ExtResource("3_objmarker")]
+position = Vector2(140, 140)
+
+[node name="inst_114004" parent="Instances" instance=ExtResource("4_objoverwo")]
+position = Vector2(20, 20)

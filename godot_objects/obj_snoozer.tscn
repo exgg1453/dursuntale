@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objsnooze"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_snoozer.gd" id="1_objsnooze"]
+
+[node name="obj_snoozer" type="Node2D"]
+script = ExtResource("1_objsnooze")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_zzz_0.png")

@@ -1,0 +1,40 @@
+[gd_scene load_steps=9 format=3 uid="uid://room_fire10a"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_conveyorr.tscn" id="1_objconvey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_conveyorsnapper.tscn" id="2_objconvey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_dogfood.tscn" id="3_objdogfoo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_doorB.tscn" id="4_objdoorb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_echoflower.tscn" id="5_objechofl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="6_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="7_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="8_objoverwo"]
+
+[node name="room_fire10A_old" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113622" parent="Instances" instance=ExtResource("1_objconvey")]
+position = Vector2(160, 100)
+
+[node name="inst_113623" parent="Instances" instance=ExtResource("6_objmainch")]
+position = Vector2(80, 120)
+
+[node name="inst_113624" parent="Instances" instance=ExtResource("2_objconvey")]
+position = Vector2(230, 20)
+
+[node name="inst_113625" parent="Instances" instance=ExtResource("5_objechofl")]
+position = Vector2(580, 70)
+
+[node name="inst_113626" parent="Instances" instance=ExtResource("4_objdoorb")]
+position = Vector2(1120, 80)
+
+[node name="inst_113627" parent="Instances" instance=ExtResource("4_objdoorb")]
+position = Vector2(1140, 80)
+
+[node name="inst_113628" parent="Instances" instance=ExtResource("7_objmarker")]
+position = Vector2(1130, 95)
+
+[node name="inst_113629" parent="Instances" instance=ExtResource("3_objdogfoo")]
+position = Vector2(70, 170)
+
+[node name="inst_113630" parent="Instances" instance=ExtResource("8_objoverwo")]
+position = Vector2(20, 20)

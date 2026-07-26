@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfriend"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_friendgraph.gd" id="1_objfriend"]
+
+[node name="obj_friendgraph" type="Node2D"]
+script = ExtResource("1_objfriend")

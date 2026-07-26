@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objglowsh"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_glowshroom.gd" id="1_objglowsh"]
+
+[node name="obj_glowshroom" type="Node2D"]
+script = ExtResource("1_objglowsh")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_glowshroom_0.png")

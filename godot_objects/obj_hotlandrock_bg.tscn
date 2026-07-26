@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objhotlan"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_hotlandrock_bg.gd" id="1_objhotlan"]
+
+[node name="obj_hotlandrock_bg" type="Node2D"]
+script = ExtResource("1_objhotlan")

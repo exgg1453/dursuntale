@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_monster"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_monster_extrabody.tscn" id="1_objmonste"]
+
+[node name="room_monsteralign_test" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113952" parent="Instances" instance=ExtResource("1_objmonste")]
+position = Vector2(160, 48)

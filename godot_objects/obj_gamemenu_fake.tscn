@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgameme"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_gamemenu_fake.gd" id="1_objgameme"]
+
+[node name="obj_gamemenu_fake" type="Node2D"]
+script = ExtResource("1_objgameme")

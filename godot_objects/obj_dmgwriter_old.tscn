@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdmgwri"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_dmgwriter_old.gd" id="1_objdmgwri"]
+
+[node name="obj_dmgwriter_old" type="Node2D"]
+script = ExtResource("1_objdmgwri")

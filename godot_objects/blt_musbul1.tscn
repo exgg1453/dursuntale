@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bltmusbul"]
+
+[ext_resource type="Script" path="res://godot_objects/blt_musbul1.gd" id="1_bltmusbul"]
+
+[node name="blt_musbul1" type="Node2D"]
+script = ExtResource("1_bltmusbul")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_musbul_1_0.png")

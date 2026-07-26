@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objquiche"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_quicheguilt.gd" id="1_objquiche"]
+
+[node name="obj_quicheguilt" type="Node2D"]
+script = ExtResource("1_objquiche")

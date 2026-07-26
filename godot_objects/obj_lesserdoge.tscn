@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objlesser"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_lesserdoge.gd" id="1_objlesser"]
+
+[node name="obj_lesserdoge" type="Node2D"]
+script = ExtResource("1_objlesser")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_lesserdoge_0.png")

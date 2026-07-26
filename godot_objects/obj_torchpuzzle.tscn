@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtorchp"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_torchpuzzle.gd" id="1_objtorchp"]
+
+[node name="obj_torchpuzzle" type="Node2D"]
+script = ExtResource("1_objtorchp")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objstrang"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_strangeman_headloss.gd" id="1_objstrang"]
+
+[node name="obj_strangeman_headloss" type="Node2D"]
+script = ExtResource("1_objstrang")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_strangeman_headless_walk_0.png")

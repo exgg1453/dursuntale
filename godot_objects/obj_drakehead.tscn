@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdrakeh"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_drakehead.gd" id="1_objdrakeh"]
+
+[node name="obj_drakehead" type="Node2D"]
+script = ExtResource("1_objdrakeh")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_snowdrake_head_0.png")

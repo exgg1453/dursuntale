@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtelesc"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_telescope.gd" id="1_objtelesc"]
+
+[node name="obj_telescope" type="CharacterBody2D"]
+script = ExtResource("1_objtelesc")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_telescope_0.png")

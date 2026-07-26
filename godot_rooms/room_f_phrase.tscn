@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_f_phras"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_f_frasier.tscn" id="1_objffras"]
+
+[node name="room_f_phrase" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113519" parent="Instances" instance=ExtResource("1_objffras")]
+position = Vector2(80, 128)

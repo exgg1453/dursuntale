@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfriend"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_friendparent.gd" id="1_objfriend"]
+
+[node name="obj_friendparent" type="Node2D"]
+script = ExtResource("1_objfriend")
+
+[node name="Alarm0" type="Timer" parent="."]
+one_shot = true

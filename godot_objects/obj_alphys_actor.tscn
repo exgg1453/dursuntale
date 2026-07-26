@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objalphys"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_alphys_actor.gd" id="1_objalphys"]
+
+[node name="obj_alphys_actor" type="Node2D"]
+script = ExtResource("1_objalphys")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_alphys_d_0.png")

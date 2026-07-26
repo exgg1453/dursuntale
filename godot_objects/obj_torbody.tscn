@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtorbod"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_torbody.gd" id="1_objtorbod"]
+
+[node name="obj_torbody" type="Node2D"]
+script = ExtResource("1_objtorbod")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_face_torielbody_0.png")

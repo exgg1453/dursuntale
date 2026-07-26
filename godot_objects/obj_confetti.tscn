@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objconfet"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_confetti.gd" id="1_objconfet"]
+
+[node name="obj_confetti" type="Node2D"]
+script = ExtResource("1_objconfet")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_confetti_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdoordm"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_doorDmusicfade.gd" id="1_objdoordm"]
+
+[node name="obj_doorDmusicfade" type="Node2D"]
+script = ExtResource("1_objdoordm")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_doorD_0.png")

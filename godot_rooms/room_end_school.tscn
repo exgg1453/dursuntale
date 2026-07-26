@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_end_sch"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_endschoolanim.tscn" id="1_objendsch"]
+
+[node name="room_end_school" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113493" parent="Instances" instance=ExtResource("1_objendsch")]
+position = Vector2(24, 445)

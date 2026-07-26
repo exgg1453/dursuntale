@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmagics"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_magicstar.gd" id="1_objmagics"]
+
+[node name="obj_magicstar" type="Node2D"]
+script = ExtResource("1_objmagics")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_magicstar_0.png")

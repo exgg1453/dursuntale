@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmusbul"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_musbulgen.gd" id="1_objmusbul"]
+
+[node name="obj_musbulgen" type="Node2D"]
+script = ExtResource("1_objmusbul")

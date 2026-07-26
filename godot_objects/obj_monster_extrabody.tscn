@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmonste"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_monster_extrabody.gd" id="1_objmonste"]
+
+[node name="obj_monster_extrabody" type="Node2D"]
+script = ExtResource("1_objmonste")

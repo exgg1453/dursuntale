@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=3 uid="uid://room_tundra_"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_door_s_musfade.tscn" id="1_objdoors"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="2_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markers.tscn" id="3_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="4_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room1.tscn" id="5_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room2.tscn" id="6_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room3.tscn" id="7_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room4.tscn" id="8_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sansmusic.tscn" id="9_objsansmu"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidextall_2.tscn" id="10_objsolide"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="11_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidsmall.tscn" id="12_objsolids"]
+
+[node name="room_tundra_sansbasement" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_103694" parent="Instances" instance=ExtResource("10_objsolide")]
+position = Vector2(0, 100)
+
+[node name="inst_103695" parent="Instances" instance=ExtResource("10_objsolide")]
+position = Vector2(260, 80)
+
+[node name="inst_103696" parent="Instances" instance=ExtResource("2_objmainch")]
+position = Vector2(50, 110)
+
+[node name="inst_103697" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(20, 100)
+
+[node name="inst_103698" parent="Instances" instance=ExtResource("5_objreadab")]
+position = Vector2(100, 95)
+
+[node name="inst_103699" parent="Instances" instance=ExtResource("6_objreadab")]
+position = Vector2(130, 95)
+
+[node name="inst_103700" parent="Instances" instance=ExtResource("7_objreadab")]
+position = Vector2(160, 95)
+
+[node name="inst_103701" parent="Instances" instance=ExtResource("7_objreadab")]
+position = Vector2(180, 95)
+
+[node name="inst_103702" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(225, 120)
+
+[node name="inst_103703" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(220, 135)
+
+[node name="inst_103704" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(220, 150)
+
+[node name="inst_103705" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(240, 115)
+
+[node name="inst_103706" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(240, 135)
+
+[node name="inst_103707" parent="Instances" instance=ExtResource("12_objsolids")]
+position = Vector2(240, 150)
+
+[node name="inst_103708" parent="Instances" instance=ExtResource("8_objreadab")]
+position = Vector2(225, 120)
+
+[node name="inst_103709" parent="Instances" instance=ExtResource("8_objreadab")]
+position = Vector2(220, 135)
+
+[node name="inst_103710" parent="Instances" instance=ExtResource("8_objreadab")]
+position = Vector2(220, 150)
+
+[node name="inst_103711" parent="Instances" instance=ExtResource("9_objsansmu")]
+position = Vector2(105, 15)
+
+[node name="inst_103712" parent="Instances" instance=ExtResource("1_objdoors")]
+position = Vector2(40, 95)
+
+[node name="inst_103713" parent="Instances" instance=ExtResource("1_objdoors")]
+position = Vector2(60, 95)
+
+[node name="inst_103714" parent="Instances" instance=ExtResource("3_objmarker")]
+position = Vector2(50, 110)
+
+[node name="inst_103715" parent="Instances" instance=ExtResource("11_objsolidl")]
+position = Vector2(20, 160)
+
+[node name="inst_103716" parent="Instances" instance=ExtResource("11_objsolidl")]
+position = Vector2(80, 100)
+
+[node name="inst_103717" parent="Instances" instance=ExtResource("4_objoverwo")]
+position = Vector2(20, 20)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objnicecr"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_nicecreamguy.gd" id="1_objnicecr"]
+
+[node name="obj_nicecreamguy" type="CharacterBody2D"]
+script = ExtResource("1_objnicecr")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_icecreamguy_sad_0.png")

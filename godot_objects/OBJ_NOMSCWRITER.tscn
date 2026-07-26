@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objnomscw"]
+
+[ext_resource type="Script" path="res://godot_objects/OBJ_NOMSCWRITER.gd" id="1_objnomscw"]
+
+[node name="OBJ_NOMSCWRITER" type="Node2D"]
+script = ExtResource("1_objnomscw")

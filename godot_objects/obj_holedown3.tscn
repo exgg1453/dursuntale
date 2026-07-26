@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objholedo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_holedown3.gd" id="1_objholedo"]
+
+[node name="obj_holedown3" type="Node2D"]
+script = ExtResource("1_objholedo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_holemask3_0.png")

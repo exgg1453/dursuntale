@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objffras"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_f_frasier.gd" id="1_objffras"]
+
+[node name="obj_f_frasier" type="Node2D"]
+script = ExtResource("1_objffras")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objendflo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_endflowey_regret.gd" id="1_objendflo"]
+
+[node name="obj_endflowey_regret" type="Node2D"]
+script = ExtResource("1_objendflo")

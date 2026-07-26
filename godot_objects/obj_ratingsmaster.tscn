@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objrating"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_ratingsmaster.gd" id="1_objrating"]
+
+[node name="obj_ratingsmaster" type="Node2D"]
+script = ExtResource("1_objrating")

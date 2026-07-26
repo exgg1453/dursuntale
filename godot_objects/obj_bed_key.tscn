@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbedke"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bed_key.gd" id="1_objbedke"]
+
+[node name="obj_bed_key" type="Node2D"]
+script = ExtResource("1_objbedke")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_bed_dark_nosheet_0.png")

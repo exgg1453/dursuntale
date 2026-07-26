@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_end_hig"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_endcaranim.tscn" id="1_objendcar"]
+
+[node name="room_end_highway" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113490" parent="Instances" instance=ExtResource("1_objendcar")]
+position = Vector2(116, 56)

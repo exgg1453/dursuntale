@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://room_asrielt"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_asriel_body.tscn" id="1_objasriel"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_heart_another.tscn" id="2_objheart"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_roundedge.tscn" id="3_objrounde"]
+
+[node name="room_asrieltest" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_114032" parent="Instances" instance=ExtResource("3_objrounde")]
+position = Vector2(32, 240)
+
+[node name="inst_114033" parent="Instances" instance=ExtResource("2_objheart")]
+position = Vector2(304, 320)
+
+[node name="inst_114034" parent="Instances" instance=ExtResource("1_objasriel")]
+position = Vector2(192, 80)

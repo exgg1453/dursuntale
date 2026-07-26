@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmusico"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_musicobjectparent.gd" id="1_objmusico"]
+
+[node name="obj_musicobjectparent" type="Node2D"]
+script = ExtResource("1_objmusico")

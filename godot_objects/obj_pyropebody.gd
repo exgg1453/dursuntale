@@ -1,0 +1,55 @@
+# Auto-converted from GameMaker: obj_pyropebody
+extends Node2D
+
+func _ready():
+	image_speed= 0
+	siner= 0
+	hurt= 0
+	rotto= 0
+
+func _on_outside_room():
+	if(hurt == 0) {
+	    rotto= 0
+	    siner++
+	}
+	if(hurt == 1) {
+	    rotto++
+	    x= parent.x + 8
+	    siner= 28
+	}
+	nowy= y + 120
+	draw_sprite_ext(395/* spr_pyropefootl */, 0, x + 38, nowy - abs(-sin(siner / 14) * 20), 2, 2, abs(-sin(siner / 14) * 40), 16777215, 1)
+	draw_sprite_ext(394/* spr_pyropefootr */, 0, x + 60, nowy - abs(-sin(siner / 14) * 20), 2, 2, -abs(sin(siner / 14) * 40), 16777215, 1)
+	nowy-= 20 + abs(-sin(siner / 14) * 20)
+	i= 5
+	while(i > -1) {
+	    draw_sprite_ext(398/* spr_pyropebody */, i, x, nowy, 2, 2, 0, 16777215, 1)
+	    nowy-= 12
+	    nowy-= abs(sin((siner - i) / 14) * 6)
+	    i--
+	}
+	if(hurt == 0)
+	    draw_sprite_ext(396/* spr_pyropehead */, siner / 10, x + 50, nowy - 30, 2, 2, sin(siner / 6) * 4 + sin(rotto) * 12, 16777215, 1)
+	if(hurt == 1)
+	    draw_sprite_ext(397/* spr_pyropehead2 */, siner / 10, x + 50, nowy - 30, 2, 2, sin(rotto) * 12, 16777215, 1)
+
+func _spawn(scene_name: String, px: float, py: float) -> Node:
+	var scene = load("res://godot_objects/" + scene_name + ".tscn")
+	if scene:
+		var inst = scene.instantiate()
+		inst.position = Vector2(px, py)
+		get_parent().add_child(inst)
+		return inst
+	return null
+
+func _play_sound(snd: String) -> void:
+	var p := AudioStreamPlayer.new()
+	add_child(p)
+	var s = load("res://sound/audio/" + snd + ".ogg")
+	if not s: s = load("res://sound/audio/" + snd + ".wav")
+	if s:
+		p.stream = s; p.play()
+		p.finished.connect(p.queue_free)
+
+func _stop_sound(_snd: String) -> void:
+	pass  # TODO: track AudioStreamPlayer by name

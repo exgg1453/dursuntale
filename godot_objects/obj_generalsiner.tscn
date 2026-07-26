@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgenera"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_generalsiner.gd" id="1_objgenera"]
+
+[node name="obj_generalsiner" type="Node2D"]
+script = ExtResource("1_objgenera")

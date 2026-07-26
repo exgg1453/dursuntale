@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfxwav"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_fx_waver.gd" id="1_objfxwav"]
+
+[node name="obj_fx_waver" type="Node2D"]
+script = ExtResource("1_objfxwav")

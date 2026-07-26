@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbigdog"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bigdog.gd" id="1_objbigdog"]
+
+[node name="obj_bigdog" type="Node2D"]
+script = ExtResource("1_objbigdog")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_npc_bigdog_0.png")

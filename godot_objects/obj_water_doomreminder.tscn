@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwater"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_water_doomreminder.gd" id="1_objwater"]
+
+[node name="obj_water_doomreminder" type="Node2D"]
+script = ExtResource("1_objwater")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_event_0.png")
+
+[node name="Alarm0" type="Timer" parent="."]
+one_shot = true

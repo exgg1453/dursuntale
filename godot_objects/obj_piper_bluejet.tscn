@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objpiper"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_piper_bluejet.gd" id="1_objpiper"]
+
+[node name="obj_piper_bluejet" type="Node2D"]
+script = ExtResource("1_objpiper")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_steamer_bottom_0.png")

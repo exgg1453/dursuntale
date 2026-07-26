@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmettsh"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_mettshine.gd" id="1_objmettsh"]
+
+[node name="obj_mettshine" type="Node2D"]
+script = ExtResource("1_objmettsh")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_mettshine_0.png")

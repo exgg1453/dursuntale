@@ -1,0 +1,197 @@
+[gd_scene load_steps=16 format=3 uid="uid://room_water_p"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_door_ruins13.tscn" id="1_objdoorr"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_door_s_musfade.tscn" id="2_objdoors"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_grasssounder.tscn" id="3_objgrasss"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="4_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerX.tscn" id="5_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markers.tscn" id="6_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="7_objoverwo"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room1.tscn" id="8_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room2.tscn" id="9_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room3.tscn" id="10_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_readable_room4.tscn" id="11_objreadab"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidlong.tscn" id="12_objsolidl"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_solidsmall.tscn" id="13_objsolids"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_tallgrass.tscn" id="14_objtallgr"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_watermusic.tscn" id="15_objwaterm"]
+
+[node name="room_water_prebird" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_106417" parent="Instances" instance=ExtResource("4_objmainch")]
+position = Vector2(140, 100)
+
+[node name="inst_106418" parent="Instances" instance=ExtResource("15_objwaterm")]
+position = Vector2(80, 20)
+
+[node name="inst_106419" parent="Instances" instance=ExtResource("5_objmarker")]
+position = Vector2(20, 100)
+
+[node name="inst_106420" parent="Instances" instance=ExtResource("1_objdoorr")]
+position = Vector2(0, 100)
+
+[node name="inst_106421" parent="Instances" instance=ExtResource("1_objdoorr")]
+position = Vector2(0, 120)
+
+[node name="inst_106422" parent="Instances" instance=ExtResource("1_objdoorr")]
+position = Vector2(0, 140)
+
+[node name="inst_106423" parent="Instances" instance=ExtResource("6_objmarker")]
+position = Vector2(580, 100)
+
+[node name="inst_106424" parent="Instances" instance=ExtResource("2_objdoors")]
+position = Vector2(600, 100)
+
+[node name="inst_106425" parent="Instances" instance=ExtResource("2_objdoors")]
+position = Vector2(600, 120)
+
+[node name="inst_106426" parent="Instances" instance=ExtResource("2_objdoors")]
+position = Vector2(600, 140)
+
+[node name="inst_106427" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(240, 70)
+
+[node name="inst_106428" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(270, 70)
+
+[node name="inst_106429" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(300, 70)
+
+[node name="inst_106430" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(330, 70)
+
+[node name="inst_106431" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(360, 70)
+
+[node name="inst_106432" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(390, 70)
+
+[node name="inst_106433" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(420, 70)
+
+[node name="inst_106434" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(210, 70)
+
+[node name="inst_106435" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(180, 70)
+
+[node name="inst_106436" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(180, 90)
+
+[node name="inst_106437" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(210, 90)
+
+[node name="inst_106438" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(240, 90)
+
+[node name="inst_106439" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(270, 90)
+
+[node name="inst_106440" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(300, 90)
+
+[node name="inst_106441" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(330, 90)
+
+[node name="inst_106442" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(360, 90)
+
+[node name="inst_106443" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(390, 90)
+
+[node name="inst_106444" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(420, 90)
+
+[node name="inst_106445" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(180, 110)
+
+[node name="inst_106446" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(210, 110)
+
+[node name="inst_106447" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(240, 110)
+
+[node name="inst_106448" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(270, 110)
+
+[node name="inst_106449" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(300, 110)
+
+[node name="inst_106450" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(390, 110)
+
+[node name="inst_106451" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(420, 110)
+
+[node name="inst_106452" parent="Instances" instance=ExtResource("3_objgrasss")]
+position = Vector2(120, 20)
+
+[node name="inst_106453" parent="Instances" instance=ExtResource("13_objsolids")]
+position = Vector2(210, 140)
+
+[node name="inst_106454" parent="Instances" instance=ExtResource("13_objsolids")]
+position = Vector2(330, 100)
+
+[node name="inst_106455" parent="Instances" instance=ExtResource("13_objsolids")]
+position = Vector2(420, 140)
+
+[node name="inst_106456" parent="Instances" instance=ExtResource("13_objsolids")]
+position = Vector2(270, 100)
+
+[node name="inst_106457" parent="Instances" instance=ExtResource("8_objreadab")]
+position = Vector2(420, 140)
+
+[node name="inst_106458" parent="Instances" instance=ExtResource("9_objreadab")]
+position = Vector2(330, 100)
+
+[node name="inst_106459" parent="Instances" instance=ExtResource("10_objreadab")]
+position = Vector2(270, 100)
+
+[node name="inst_106460" parent="Instances" instance=ExtResource("11_objreadab")]
+position = Vector2(210, 140)
+
+[node name="inst_106461" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(360, 110)
+
+[node name="inst_106462" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(330, 110)
+
+[node name="inst_106463" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(180, 124)
+
+[node name="inst_106464" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(180, 124)
+
+[node name="inst_106465" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(210, 124)
+
+[node name="inst_106466" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(240, 124)
+
+[node name="inst_106467" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(270, 124)
+
+[node name="inst_106468" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(300, 124)
+
+[node name="inst_106469" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(330, 124)
+
+[node name="inst_106470" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(360, 124)
+
+[node name="inst_106471" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(390, 124)
+
+[node name="inst_106472" parent="Instances" instance=ExtResource("14_objtallgr")]
+position = Vector2(420, 124)
+
+[node name="inst_106473" parent="Instances" instance=ExtResource("12_objsolidl")]
+position = Vector2(0, 160)
+
+[node name="inst_106474" parent="Instances" instance=ExtResource("12_objsolidl")]
+position = Vector2(0, 80)
+
+[node name="inst_106475" parent="Instances" instance=ExtResource("7_objoverwo")]
+position = Vector2(20, 20)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objhotdog"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_hotdog.gd" id="1_objhotdog"]
+
+[node name="obj_hotdog" type="Node2D"]
+script = ExtResource("1_objhotdog")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_balancehotdog_0.png")

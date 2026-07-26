@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbounce"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bounceright.gd" id="1_objbounce"]
+
+[node name="obj_bounceright" type="Node2D"]
+script = ExtResource("1_objbounce")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_venter_r_0.png")
+
+[node name="Alarm0" type="Timer" parent="."]
+one_shot = true

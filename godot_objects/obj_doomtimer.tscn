@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdoomti"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_doomtimer.gd" id="1_objdoomti"]
+
+[node name="obj_doomtimer" type="Node2D"]
+script = ExtResource("1_objdoomti")

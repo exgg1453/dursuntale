@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgameov"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_gameover.gd" id="1_objgameov"]
+
+[node name="obj_gameover" type="Node2D"]
+script = ExtResource("1_objgameov")

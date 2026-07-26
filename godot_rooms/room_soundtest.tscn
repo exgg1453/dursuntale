@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_soundte"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_soundtest.tscn" id="1_objsoundt"]
+
+[node name="room_soundtest" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113107" parent="Instances" instance=ExtResource("1_objsoundt")]
+position = Vector2(0, 0)

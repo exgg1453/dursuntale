@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmenubo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_menubone_maker.gd" id="1_objmenubo"]
+
+[node name="obj_menubone_maker" type="Node2D"]
+script = ExtResource("1_objmenubo")

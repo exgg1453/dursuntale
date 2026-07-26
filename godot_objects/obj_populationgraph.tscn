@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objpopula"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_populationgraph.gd" id="1_objpopula"]
+
+[node name="obj_populationgraph" type="Node2D"]
+script = ExtResource("1_objpopula")

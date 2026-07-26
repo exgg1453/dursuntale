@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbounce"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_bouncer.gd" id="1_objbounce"]
+
+[node name="obj_bouncer" type="Node2D"]
+script = ExtResource("1_objbounce")

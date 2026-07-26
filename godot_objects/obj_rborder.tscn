@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objrborde"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_rborder.gd" id="1_objrborde"]
+
+[node name="obj_rborder" type="Node2D"]
+script = ExtResource("1_objrborde")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_border_0.png")

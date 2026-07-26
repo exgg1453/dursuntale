@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objknock"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_knock_room.gd" id="1_objknock"]
+
+[node name="obj_knock_room" type="Node2D"]
+script = ExtResource("1_objknock")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_interactable_0.png")

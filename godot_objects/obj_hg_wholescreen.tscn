@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objhgwho"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_hg_wholescreen.gd" id="1_objhgwho"]
+
+[node name="obj_hg_wholescreen" type="Node2D"]
+script = ExtResource("1_objhgwho")

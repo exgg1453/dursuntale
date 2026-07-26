@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objroyal"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_royal_rabbitbounce.gd" id="1_objroyal"]
+
+[node name="obj_royal_rabbitbounce" type="Node2D"]
+script = ExtResource("1_objroyal")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_royalguard_rabbit_d_0.png")

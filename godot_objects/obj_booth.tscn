@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbooth"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_booth.gd" id="1_objbooth"]
+
+[node name="obj_booth" type="Node2D"]
+script = ExtResource("1_objbooth")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_booths_0.png")

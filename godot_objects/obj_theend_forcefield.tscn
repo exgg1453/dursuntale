@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtheend"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_theend_forcefield.gd" id="1_objtheend"]
+
+[node name="obj_theend_forcefield" type="Node2D"]
+script = ExtResource("1_objtheend")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_event_0.png")

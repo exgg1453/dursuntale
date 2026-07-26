@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfakedo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_fakedoor.gd" id="1_objfakedo"]
+
+[node name="obj_fakedoor" type="Node2D"]
+script = ExtResource("1_objfakedo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_fakedoor_0.png")

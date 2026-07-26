@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://room_floweyx"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_bgpipe.tscn" id="1_objbgpipe"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_flowey_bgdraw.tscn" id="2_objflowey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_flowey_master.tscn" id="3_objflowey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_floweyarm.tscn" id="4_objflowey"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_randomfacer.tscn" id="5_objrandom"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_sidestalk.tscn" id="6_objsidest"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_vines_flowey.tscn" id="7_objvines"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_vsflowey_heart.tscn" id="8_objvsflow"]
+
+[node name="room_floweyx" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113507" parent="Instances" instance=ExtResource("1_objbgpipe")]
+position = Vector2(460, 0)
+
+[node name="inst_113508" parent="Instances" instance=ExtResource("1_objbgpipe")]
+position = Vector2(160, -5)
+
+[node name="inst_113509" parent="Instances" instance=ExtResource("8_objvsflow")]
+position = Vector2(330, 330)
+
+[node name="inst_113510" parent="Instances" instance=ExtResource("4_objflowey")]
+position = Vector2(470, 210)
+
+[node name="inst_113511" parent="Instances" instance=ExtResource("4_objflowey")]
+position = Vector2(170, 205)
+
+[node name="inst_113512" parent="Instances" instance=ExtResource("7_objvines")]
+position = Vector2(432, 176)
+
+[node name="inst_113513" parent="Instances" instance=ExtResource("7_objvines")]
+position = Vector2(192, 176)
+
+[node name="inst_113514" parent="Instances" instance=ExtResource("6_objsidest")]
+position = Vector2(432, 112)
+
+[node name="inst_113515" parent="Instances" instance=ExtResource("6_objsidest")]
+position = Vector2(190, 110)
+
+[node name="inst_113516" parent="Instances" instance=ExtResource("2_objflowey")]
+position = Vector2(70, 380)
+
+[node name="inst_113517" parent="Instances" instance=ExtResource("5_objrandom")]
+position = Vector2(260, 35)
+
+[node name="inst_113518" parent="Instances" instance=ExtResource("3_objflowey")]
+position = Vector2(70, 35)

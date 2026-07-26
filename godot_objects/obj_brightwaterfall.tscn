@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objbright"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_brightwaterfall.gd" id="1_objbright"]
+
+[node name="obj_brightwaterfall" type="Node2D"]
+script = ExtResource("1_objbright")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_waterfall_bright_mt_0.png")

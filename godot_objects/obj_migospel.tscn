@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmigosp"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_migospel.gd" id="1_objmigosp"]
+
+[node name="obj_migospel" type="Node2D"]
+script = ExtResource("1_objmigosp")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_migospel_hurt_0.png")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://room_f_room"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara_fake.tscn" id="1_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_savepoint_fake.tscn" id="2_objsavepo"]
+
+[node name="room_f_room" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113505" parent="Instances" instance=ExtResource("1_objmainch")]
+position = Vector2(144, 448)
+
+[node name="inst_113506" parent="Instances" instance=ExtResource("2_objsavepo")]
+position = Vector2(144, 160)

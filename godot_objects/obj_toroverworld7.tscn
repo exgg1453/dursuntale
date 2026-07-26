@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objtorove"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_toroverworld7.gd" id="1_objtorove"]
+
+[node name="obj_toroverworld7" type="Node2D"]
+script = ExtResource("1_objtorove")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_toriel_lt_0.png")

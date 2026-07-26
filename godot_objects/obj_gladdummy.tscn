@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgladdu"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_gladdummy.gd" id="1_objgladdu"]
+
+[node name="obj_gladdummy" type="Node2D"]
+script = ExtResource("1_objgladdu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_dummybattle_glad_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcheese"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_cheesetable1.gd" id="1_objcheese"]
+
+[node name="obj_cheesetable1" type="CharacterBody2D"]
+script = ExtResource("1_objcheese")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_cheesetable_0.png")

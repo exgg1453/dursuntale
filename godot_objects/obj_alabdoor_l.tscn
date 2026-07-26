@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objalabdo"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_alabdoor_l.gd" id="1_objalabdo"]
+
+[node name="obj_alabdoor_l" type="Node2D"]
+script = ExtResource("1_objalabdo")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_labdoor_hang_r_0.png")

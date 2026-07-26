@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objpiepi"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_pie_pickup.gd" id="1_objpiepi"]
+
+[node name="obj_pie_pickup" type="CharacterBody2D"]
+script = ExtResource("1_objpiepi")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_pieslice_0.png")

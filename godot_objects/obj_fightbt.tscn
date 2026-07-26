@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfightb"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_fightbt.gd" id="1_objfightb"]
+
+[node name="obj_fightbt" type="Node2D"]
+script = ExtResource("1_objfightb")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_fightbt_0.png")

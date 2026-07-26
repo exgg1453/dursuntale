@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objrotspe"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_rotspear.gd" id="1_objrotspe"]
+
+[node name="obj_rotspear" type="Node2D"]
+script = ExtResource("1_objrotspe")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_followspear_2_0.png")

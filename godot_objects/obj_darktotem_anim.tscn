@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objdarkto"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_darktotem_anim.gd" id="1_objdarkto"]
+
+[node name="obj_darktotem_anim" type="Node2D"]
+script = ExtResource("1_objdarkto")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_darknesstotem_0.png")

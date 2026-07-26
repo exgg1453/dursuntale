@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfinalf"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_finalfroggit_body.gd" id="1_objfinalf"]
+
+[node name="obj_finalfroggit_body" type="Node2D"]
+script = ExtResource("1_objfinalf")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_finalfroggit_0.png")

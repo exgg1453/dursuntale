@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objlongsn"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_longsnail.gd" id="1_objlongsn"]
+
+[node name="obj_longsnail" type="CharacterBody2D"]
+script = ExtResource("1_objlongsn")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_longsnail_0.png")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objredact"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_redacted_a.gd" id="1_objredact"]
+
+[node name="obj_redacted_a" type="CharacterBody2D"]
+script = ExtResource("1_objredact")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_redacted_a_0.png")

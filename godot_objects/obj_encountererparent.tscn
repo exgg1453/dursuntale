@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objencoun"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_encountererparent.gd" id="1_objencoun"]
+
+[node name="obj_encountererparent" type="Node2D"]
+script = ExtResource("1_objencoun")

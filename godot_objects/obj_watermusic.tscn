@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objwaterm"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_watermusic.gd" id="1_objwaterm"]
+
+[node name="obj_watermusic" type="Node2D"]
+script = ExtResource("1_objwaterm")

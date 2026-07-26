@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objfallof"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_fallofflimb.gd" id="1_objfallof"]
+
+[node name="obj_fallofflimb" type="Node2D"]
+script = ExtResource("1_objfallof")

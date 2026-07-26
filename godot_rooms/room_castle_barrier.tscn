@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://room_castle_"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_barrierevent.tscn" id="1_objbarrie"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_finalbarrier.tscn" id="2_objfinalb"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_mainchara.tscn" id="3_objmainch"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_markerA.tscn" id="4_objmarker"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_overworldcontroller.tscn" id="5_objoverwo"]
+
+[node name="room_castle_barrier" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_112263" parent="Instances" instance=ExtResource("2_objfinalb")]
+position = Vector2(0, 0)
+
+[node name="inst_112264" parent="Instances" instance=ExtResource("3_objmainch")]
+position = Vector2(150, 200)
+
+[node name="inst_112265" parent="Instances" instance=ExtResource("4_objmarker")]
+position = Vector2(150, 200)
+
+[node name="inst_112266" parent="Instances" instance=ExtResource("1_objbarrie")]
+position = Vector2(150, 140)
+
+[node name="inst_112267" parent="Instances" instance=ExtResource("5_objoverwo")]
+position = Vector2(20, 20)

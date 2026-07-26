@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objnormal"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_normaldrop.gd" id="1_objnormal"]
+
+[node name="obj_normaldrop" type="Node2D"]
+script = ExtResource("1_objnormal")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_statuedrop_0.png")

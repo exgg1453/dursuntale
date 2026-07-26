@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bullettest"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_battlecontroller.tscn" id="1_objbattle"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_bulletgenthatched.tscn" id="2_objbullet"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_heart.tscn" id="3_objheart"]
+[ext_resource type="PackedScene" path="res://godot_objects/obj_lasergen1.tscn" id="4_objlaserg"]
+
+[node name="bullettest" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113483" parent="Instances" instance=ExtResource("3_objheart")]
+position = Vector2(288, 288)
+
+[node name="inst_113484" parent="Instances" instance=ExtResource("1_objbattle")]
+position = Vector2(464, 128)
+
+[node name="inst_113485" parent="Instances" instance=ExtResource("2_objbullet")]
+position = Vector2(288, 400)
+
+[node name="inst_113486" parent="Instances" instance=ExtResource("4_objlaserg")]
+position = Vector2(288, 304)

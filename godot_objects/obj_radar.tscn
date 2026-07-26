@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objradar"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_radar.gd" id="1_objradar"]
+
+[node name="obj_radar" type="Node2D"]
+script = ExtResource("1_objradar")

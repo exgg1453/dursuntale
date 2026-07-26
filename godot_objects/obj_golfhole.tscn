@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objgolfho"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_golfhole.gd" id="1_objgolfho"]
+
+[node name="obj_golfhole" type="Node2D"]
+script = ExtResource("1_objgolfho")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_hole2_0.png")

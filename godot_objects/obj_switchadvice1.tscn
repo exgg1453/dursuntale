@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objswitch"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_switchadvice1.gd" id="1_objswitch"]
+
+[node name="obj_switchadvice1" type="Node2D"]
+script = ExtResource("1_objswitch")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_tornote_0.png")

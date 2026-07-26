@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objicecav"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_icecavewall.gd" id="1_objicecav"]
+
+[node name="obj_icecavewall" type="Node2D"]
+script = ExtResource("1_objicecav")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_icecavewall_0.png")

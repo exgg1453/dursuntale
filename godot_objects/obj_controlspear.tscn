@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objcontro"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_controlspear.gd" id="1_objcontro"]
+
+[node name="obj_controlspear" type="Node2D"]
+script = ExtResource("1_objcontro")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_undynespear_end_0.png")

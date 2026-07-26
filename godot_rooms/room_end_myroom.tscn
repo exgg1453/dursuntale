@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://room_end_myr"]
+
+[ext_resource type="PackedScene" path="res://godot_objects/obj_endmyroom.tscn" id="1_objendmyr"]
+
+[node name="room_end_myroom" type="Node2D"]
+
+[node name="Instances" type="Node2D" parent="."]
+[node name="inst_113496" parent="Instances" instance=ExtResource("1_objendmyr")]
+position = Vector2(40, 80)

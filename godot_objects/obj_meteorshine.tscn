@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objmeteor"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_meteorshine.gd" id="1_objmeteor"]
+
+[node name="obj_meteorshine" type="Node2D"]
+script = ExtResource("1_objmeteor")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_meteorshine_0.png")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://objheatwa"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_heatwaver.gd" id="1_objheatwa"]
+
+[node name="obj_heatwaver" type="Node2D"]
+script = ExtResource("1_objheatwa")

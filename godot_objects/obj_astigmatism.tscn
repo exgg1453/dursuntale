@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://objastigm"]
+
+[ext_resource type="Script" path="res://godot_objects/obj_astigmatism.gd" id="1_objastigm"]
+
+[node name="obj_astigmatism" type="Node2D"]
+script = ExtResource("1_objastigm")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+# TODO: texture = load("res://assets/sprites/spr_astigmatismhurt_0.png")

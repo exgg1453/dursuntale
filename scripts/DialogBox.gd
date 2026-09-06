@@ -24,7 +24,6 @@ const TYPER_INFO := {
 	27: {"name": "Mettaton", "color": Color.WHITE},
 	37: {"name": "Undyne",   "color": Color.WHITE},
 	47: {"name": "Alphys",   "color": Color.WHITE},
-	5:  {"name": "Toriel",   "color": Color.WHITE},
 }
 
 # ─── Yüz → görsel ─────────────────────────────────────────────────────
@@ -207,7 +206,7 @@ func _render_bbcode() -> void:
 func _update_face() -> void:
 	var fc := GS.facechoice
 	if FACE_PATHS.has(fc) and FACE_PATHS[fc] != "":
-		var path := FACE_PATHS[fc]
+		var path: String = FACE_PATHS[fc]
 		if ResourceLoader.exists(path):
 			face_rect.texture = load(path)
 			face_rect.visible = true

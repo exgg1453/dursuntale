@@ -89,6 +89,25 @@ jobs:
           timeout 120 godot --headless --path . --import || true
           echo "Asset import tamamlandı ✓"
 
+      - name: Debug Android SDK contents
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "--- SDK root ---"
+          ls -la "$ANDROID_HOME" || true
+          echo "--- build-tools ---"
+          ls -la "$ANDROID_HOME/build-tools" 2>&1 || true
+          ls -la "$ANDROID_HOME/build-tools/34.0.0" 2>&1 || true
+          echo "--- platform-tools ---"
+          ls -la "$ANDROID_HOME/platform-tools" 2>&1 || true
+          echo "--- platforms ---"
+          ls -la "$ANDROID_HOME/platforms" 2>&1 || true
+          echo "--- editor settings ---"
+          cat ~/.config/godot/editor_settings-4.tres || true
+          echo "--- export_presets.cfg ---"
+          cat export_presets.cfg || true
+          echo "--- debug.keystore ---"
+          ls -la debug.keystore || true
+
       - name: Build Android APK
         run: |
           set -o pipefail

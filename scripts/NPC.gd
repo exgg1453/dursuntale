@@ -60,7 +60,7 @@ func _setup_dialog(id: String) -> void:
 			GS.typer = 5
 			GS.facechoice = 1       # Toriel yüzü
 			GS.msg[0] = "* Evladım^1, sana söylemem&gereken bir şey var./"
-			GS.msg[1] = "* \RDışarı çıkma.\W&Çok tehlikeli./"
+			GS.msg[1] = "* \\RDışarı çıkma.\\W&Çok tehlikeli./"
 			GS.msg[2] = "* Söz veriyor musun?/%%"
 
 		"sans_sentry":

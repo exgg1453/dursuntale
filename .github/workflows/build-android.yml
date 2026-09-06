@@ -91,10 +91,23 @@ jobs:
 
       - name: Build Android APK
         run: |
+          set -o pipefail
           mkdir -p build
           # DÜZELTME: --path --export-debug'dan önce, çıktı yolu absolute olmalı
-          godot --headless --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk"
+          godot --headless --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk" 2>&1 | tee build_log.txt
           echo "APK build tamamlandı ✓"
+
+      - name: Save error log
+        if: failure()
+        run: cp build_log.txt error.txt
+
+      - name: Upload error log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: error-log
+          path: error.txt
+          retention-days: 30
 
       - name: Verify APK
         run: |

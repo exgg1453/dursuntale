@@ -121,6 +121,77 @@ jobs:
             ls -la debug.keystore || true
           } | tee diag_log.txt
 
+      - name: Control test - export empty project
+        run: |
+          set -o pipefail
+          mkdir -p /tmp/empty_probe/build
+          cat > /tmp/empty_probe/project.godot << 'PGEOF'
+          config_version=5
+
+          [application]
+
+          config/name="probe"
+          config/features=PackedStringArray("4.3")
+          PGEOF
+          cat > /tmp/empty_probe/export_presets.cfg << PRESETEOF
+          [preset.0]
+
+          name="Android"
+          platform="Android"
+          runnable=true
+          dedicated_server=false
+          custom_features=""
+          export_filter="all_resources"
+          include_filter=""
+          exclude_filter=""
+          export_path="build/probe.apk"
+          encryption_include_filters=""
+          encryption_exclude_filters=""
+          encrypt_pck=false
+          encrypt_directory=false
+
+          [preset.0.options]
+
+          gradle_build/use_gradle_build=false
+          architectures/arm64-v8a=true
+          architectures/armeabi-v7a=false
+          architectures/x86=false
+          architectures/x86_64=false
+          keystore/debug="$(pwd)/debug.keystore"
+          keystore/debug_user="androiddebugkey"
+          keystore/debug_password="android"
+          keystore/release=""
+          keystore/release_user=""
+          keystore/release_password=""
+          version/code=1
+          version/name="1.0"
+          package/unique_name="com.probe.test"
+          package/name="Probe"
+          package/signed=false
+          package/classify_as_game=true
+          screen/immersive_mode=true
+          screen/orientation=1
+          permissions/vibrate=true
+          permissions/wake_lock=true
+          permissions/modify_audio_settings=true
+          permissions/read_external_storage=true
+          permissions/write_external_storage=true
+          permissions/internet=true
+          permissions/access_network_state=true
+          permissions/access_wifi_state=true
+          PRESETEOF
+          echo "--- probe export_presets.cfg ---"
+          cat /tmp/empty_probe/export_presets.cfg
+          echo "--- probe export denemesi ---"
+          if godot --headless --path /tmp/empty_probe --export-debug "Android" "/tmp/empty_probe/build/probe.apk" 2>&1 | tee /tmp/empty_probe/probe_log.txt; then
+            :
+          fi
+          if [ -s "/tmp/empty_probe/build/probe.apk" ]; then
+            echo "PROBE SONUCU: BAŞARILI ✓ - sorun proje içeriğinde"
+          else
+            echo "PROBE SONUCU: BAŞARISIZ ✗ - sorun ortam/SDK'da"
+          fi
+
       - name: Build Android APK
         run: |
           set -o pipefail
@@ -152,7 +223,7 @@ jobs:
 
       - name: Save error log
         if: failure()
-        run: cat diag_log.txt build_log.txt > error.txt 2>/dev/null || cp build_log.txt error.txt
+        run: cat /tmp/empty_probe/probe_log.txt diag_log.txt build_log.txt > error.txt 2>/dev/null || cp build_log.txt error.txt
 
       - name: Upload error log
         if: failure()

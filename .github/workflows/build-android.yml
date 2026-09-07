@@ -115,7 +115,26 @@ jobs:
           set -o pipefail
           mkdir -p build
           # DÜZELTME: --path --export-debug'dan önce, çıktı yolu absolute olmalı
-          godot --headless --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk" 2>&1 | tee build_log.txt
+          # NOT: Godot'un headless export'unda bilinen bir race condition var
+          # (EditorFileSystem taraması bitmeden export tetiklenebiliyor), bu yüzden
+          # başarısız olursa birkaç kez tekrar deniyoruz.
+          success=false
+          for attempt in 1 2 3; do
+            echo "=== Export denemesi $attempt/3 ===" | tee -a build_log.txt
+            rm -f "$(pwd)/build/dursuntale.apk"
+            godot --headless --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk" 2>&1 | tee -a build_log.txt
+            if [ -s "$(pwd)/build/dursuntale.apk" ]; then
+              echo "Deneme $attempt başarılı ✓" | tee -a build_log.txt
+              success=true
+              break
+            fi
+            echo "Deneme $attempt başarısız, tekrar deneniyor..." | tee -a build_log.txt
+            sleep 5
+          done
+          if [ "$success" = false ]; then
+            echo "Tüm denemeler başarısız oldu ✗" | tee -a build_log.txt
+            exit 1
+          fi
           echo "APK build tamamlandı ✓"
 
       - name: Save error log

@@ -34,6 +34,17 @@ jobs:
           sdkmanager "ndk;23.2.8568313"
           echo "ANDROID_HOME=$ANDROID_HOME" >> $GITHUB_ENV
           echo "ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/23.2.8568313" >> $GITHUB_ENV
+          echo "--- build-tools öncesi ---"
+          ls "$ANDROID_HOME/build-tools"
+          echo "--- 34.0.0 dışındaki sürümleri kaldırıyoruz ---"
+          for d in "$ANDROID_HOME"/build-tools/*/; do
+            v=$(basename "$d")
+            if [ "$v" != "34.0.0" ]; then
+              rm -rf "$d"
+            fi
+          done
+          echo "--- build-tools sonrası ---"
+          ls "$ANDROID_HOME/build-tools"
 
       - name: Download Godot 4.3
         run: |

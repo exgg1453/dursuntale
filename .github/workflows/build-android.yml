@@ -130,10 +130,10 @@ jobs:
           # (EditorFileSystem taraması bitmeden export tetiklenebiliyor), bu yüzden
           # başarısız olursa birkaç kez tekrar deniyoruz.
           success=false
-          for attempt in 1 2 3; do
+          for attempt in 1; do
             echo "=== Export denemesi $attempt/3 ===" | tee -a build_log.txt
             rm -f "$(pwd)/build/dursuntale.apk"
-            if godot --headless --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk" 2>&1 | tee -a build_log.txt; then
+            if godot --headless --verbose --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk" 2>&1 | tee -a build_log.txt; then
               :
             fi
             if [ -s "$(pwd)/build/dursuntale.apk" ]; then

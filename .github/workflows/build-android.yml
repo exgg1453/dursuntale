@@ -7,10 +7,14 @@ on:
     branches: [ master, main ]
   workflow_dispatch:
 
+env:
+  GODOT_VERSION: 4.3
+  GODOT_RELEASE: 4.3-stable
+
 jobs:
   build-android:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,58 +30,33 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Android Build Tools & NDK
+      - name: Install Android platform & build tools
         run: |
-          sdkmanager "platform-tools"
-          sdkmanager "platforms;android-34"
-          sdkmanager "build-tools;34.0.0"
-          sdkmanager "ndk;23.2.8568313"
-          echo "ANDROID_HOME=$ANDROID_HOME" >> $GITHUB_ENV
-          echo "ANDROID_NDK_ROOT=$ANDROID_HOME/ndk/23.2.8568313" >> $GITHUB_ENV
-          echo "--- build-tools öncesi ---"
-          ls "$ANDROID_HOME/build-tools"
-          echo "--- 34.0.0 dışındaki sürümleri kaldırıyoruz ---"
-          for d in "$ANDROID_HOME"/build-tools/*/; do
-            v=$(basename "$d")
-            if [ "$v" != "34.0.0" ]; then
-              rm -rf "$d"
-            fi
-          done
-          echo "--- build-tools sonrası ---"
-          ls "$ANDROID_HOME/build-tools"
+          sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
-      - name: Download Godot 4.3
+      - name: Download Godot ${{ env.GODOT_VERSION }}
         run: |
-          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
-          unzip -q Godot_v4.3-stable_linux.x86_64.zip
-          chmod +x Godot_v4.3-stable_linux.x86_64
-          sudo mv Godot_v4.3-stable_linux.x86_64 /usr/local/bin/godot
-          echo "Godot kuruldu: $(godot --version)"
+          wget -q "https://github.com/godotengine/godot/releases/download/${GODOT_RELEASE}/Godot_v${GODOT_RELEASE}_linux.x86_64.zip"
+          unzip -q "Godot_v${GODOT_RELEASE}_linux.x86_64.zip"
+          chmod +x "Godot_v${GODOT_RELEASE}_linux.x86_64"
+          sudo mv "Godot_v${GODOT_RELEASE}_linux.x86_64" /usr/local/bin/godot
+          godot --version
 
-      - name: Download Godot Android Export Templates
+      - name: Download Godot Android export templates
         run: |
-          mkdir -p ~/.local/share/godot/export_templates/4.3.stable
-          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz
-          unzip -q Godot_v4.3-stable_export_templates.tpz -d /tmp/templates
-          mv /tmp/templates/templates/* ~/.local/share/godot/export_templates/4.3.stable/
-          echo "Export template'ler kuruldu ✓"
+          wget -q "https://github.com/godotengine/godot/releases/download/${GODOT_RELEASE}/Godot_v${GODOT_RELEASE}_export_templates.tpz"
+          mkdir -p "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          # Only the Android templates are needed; extracting the full .tpz costs
+          # several GB of disk and time for templates this job never uses.
+          unzip -q -j -o "Godot_v${GODOT_RELEASE}_export_templates.tpz" \
+            'templates/android_debug.apk' 'templates/android_release.apk' \
+            -d "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          ls -lh "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
 
-      - name: Setup Godot Android Config
+      - name: Generate debug keystore
         run: |
-          mkdir -p ~/.config/godot
-          cat > ~/.config/godot/editor_settings-4.tres << EOF
-          [gd_resource type="EditorSettings" format=3]
-          [resource]
-          export/android/android_sdk_path = "$ANDROID_HOME"
-          export/android/debug_keystore = ""
-          export/android/debug_keystore_user = "androiddebugkey"
-          export/android/debug_keystore_pass = "android"
-          EOF
-
-      - name: Generate Debug Keystore
-        run: |
-          keytool -genkey -v \
-            -keystore debug.keystore \
+          keytool -genkeypair -v \
+            -keystore "$RUNNER_TEMP/debug.keystore" \
             -alias androiddebugkey \
             -keyalg RSA \
             -keysize 2048 \
@@ -85,163 +64,42 @@ jobs:
             -storepass android \
             -keypass android \
             -dname "CN=Android Debug,O=Android,C=US"
-          echo "Debug keystore oluşturuldu ✓"
-
-      - name: Update export preset with keystore
-        run: |
-          sed -i "s|keystore/debug=\"\"|keystore/debug=\"$(pwd)/debug.keystore\"|g" export_presets.cfg
-          sed -i 's|keystore/debug_user=""|keystore/debug_user="androiddebugkey"|g' export_presets.cfg
-          sed -i 's|keystore/debug_password=""|keystore/debug_password="android"|g' export_presets.cfg
+          # Godot 4.3 reads the debug keystore from these variables when the
+          # preset leaves keystore/debug* empty, so the committed preset stays
+          # free of machine-specific paths.
+          {
+            echo "GODOT_ANDROID_KEYSTORE_DEBUG_PATH=$RUNNER_TEMP/debug.keystore"
+            echo "GODOT_ANDROID_KEYSTORE_DEBUG_USER=androiddebugkey"
+            echo "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD=android"
+          } >> "$GITHUB_ENV"
 
       - name: Import project assets
         run: |
-          mkdir -p build
-          # DÜZELTME: --path önce gelmeli
-          timeout 120 godot --headless --path . --import || true
-          echo "Asset import tamamlandı ✓"
-
-      - name: Debug Android SDK contents
-        run: |
-          {
-            echo "ANDROID_HOME=$ANDROID_HOME"
-            echo "--- SDK root ---"
-            ls -la "$ANDROID_HOME" || true
-            echo "--- build-tools ---"
-            ls -la "$ANDROID_HOME/build-tools" 2>&1 || true
-            ls -la "$ANDROID_HOME/build-tools/34.0.0" 2>&1 || true
-            echo "--- platform-tools ---"
-            ls -la "$ANDROID_HOME/platform-tools" 2>&1 || true
-            echo "--- platforms ---"
-            ls -la "$ANDROID_HOME/platforms" 2>&1 || true
-            echo "--- editor settings ---"
-            cat ~/.config/godot/editor_settings-4.tres || true
-            echo "--- export_presets.cfg ---"
-            cat export_presets.cfg || true
-            echo "--- debug.keystore ---"
-            ls -la debug.keystore || true
-          } | tee diag_log.txt
-
-      - name: Control test - export empty project
-        run: |
-          set -o pipefail
-          mkdir -p /tmp/empty_probe/build
-          cat > /tmp/empty_probe/project.godot << 'PGEOF'
-          config_version=5
-
-          [application]
-
-          config/name="probe"
-          config/features=PackedStringArray("4.3")
-          PGEOF
-          cat > /tmp/empty_probe/export_presets.cfg << PRESETEOF
-          [preset.0]
-
-          name="Android"
-          platform="Android"
-          runnable=true
-          dedicated_server=false
-          custom_features=""
-          export_filter="all_resources"
-          include_filter=""
-          exclude_filter=""
-          export_path="build/probe.apk"
-          encryption_include_filters=""
-          encryption_exclude_filters=""
-          encrypt_pck=false
-          encrypt_directory=false
-
-          [preset.0.options]
-
-          gradle_build/use_gradle_build=false
-          architectures/arm64-v8a=true
-          architectures/armeabi-v7a=false
-          architectures/x86=false
-          architectures/x86_64=false
-          keystore/debug="$(pwd)/debug.keystore"
-          keystore/debug_user="androiddebugkey"
-          keystore/debug_password="android"
-          keystore/release=""
-          keystore/release_user=""
-          keystore/release_password=""
-          version/code=1
-          version/name="1.0"
-          package/unique_name="com.probe.test"
-          package/name="Probe"
-          package/signed=false
-          package/classify_as_game=true
-          screen/immersive_mode=true
-          screen/orientation=1
-          permissions/vibrate=true
-          permissions/wake_lock=true
-          permissions/modify_audio_settings=true
-          permissions/read_external_storage=true
-          permissions/write_external_storage=true
-          permissions/internet=true
-          permissions/access_network_state=true
-          permissions/access_wifi_state=true
-          PRESETEOF
-          echo "--- probe export_presets.cfg ---"
-          cat /tmp/empty_probe/export_presets.cfg
-          echo "--- probe export denemesi ---"
-          if godot --headless --path /tmp/empty_probe --export-debug "Android" "/tmp/empty_probe/build/probe.apk" 2>&1 | tee /tmp/empty_probe/probe_log.txt; then
-            :
-          fi
-          if [ -s "/tmp/empty_probe/build/probe.apk" ]; then
-            echo "PROBE SONUCU: BAŞARILI ✓ - sorun proje içeriğinde"
-          else
-            echo "PROBE SONUCU: BAŞARISIZ ✗ - sorun ortam/SDK'da"
-          fi
+          # Godot resolves export/android/android_sdk_path and
+          # export/android/java_sdk_path from ANDROID_HOME and JAVA_HOME the
+          # first time it writes its editor settings, which this run does.
+          godot --headless --path . --import
 
       - name: Build Android APK
         run: |
           set -o pipefail
           mkdir -p build
-          # DÜZELTME: --path --export-debug'dan önce, çıktı yolu absolute olmalı
-          # NOT: Godot'un headless export'unda bilinen bir race condition var
-          # (EditorFileSystem taraması bitmeden export tetiklenebiliyor), bu yüzden
-          # başarısız olursa birkaç kez tekrar deniyoruz.
-          success=false
-          for attempt in 1; do
-            echo "=== Export denemesi $attempt/3 ===" | tee -a build_log.txt
-            rm -f "$(pwd)/build/dursuntale.apk"
-            if godot --headless --verbose --path . --export-debug "Android" "$(pwd)/build/dursuntale.apk" 2>&1 | tee -a build_log.txt; then
-              :
-            fi
-            if [ -s "$(pwd)/build/dursuntale.apk" ]; then
-              echo "Deneme $attempt başarılı ✓" | tee -a build_log.txt
-              success=true
-              break
-            fi
-            echo "Deneme $attempt başarısız, tekrar deneniyor..." | tee -a build_log.txt
-            sleep 5
-          done
-          if [ "$success" = false ]; then
-            echo "Tüm denemeler başarısız oldu ✗" | tee -a build_log.txt
-            exit 1
-          fi
-          echo "APK build tamamlandı ✓"
-
-      - name: Save error log
-        if: failure()
-        run: cat /tmp/empty_probe/probe_log.txt diag_log.txt build_log.txt > error.txt 2>/dev/null || cp build_log.txt error.txt
-
-      - name: Upload error log
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: error-log
-          path: error.txt
-          retention-days: 30
+          godot --headless --path . --export-debug "Android" "$PWD/build/dursuntale.apk" 2>&1 | tee build_log.txt
 
       - name: Verify APK
         run: |
-          if [ -f "build/dursuntale.apk" ]; then
-            echo "✅ APK başarıyla oluşturuldu!"
-            ls -lh build/dursuntale.apk
-          else
-            echo "❌ APK oluşturulamadı!"
-            exit 1
-          fi
+          test -s build/dursuntale.apk
+          ls -lh build/dursuntale.apk
+          "$ANDROID_HOME/build-tools/34.0.0/apksigner" verify --print-certs build/dursuntale.apk
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build_log.txt
+          retention-days: 30
+          if-no-files-found: ignore
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
@@ -259,9 +117,9 @@ jobs:
           name: "Dursuntale ${{ github.ref_name }}"
           body: |
             ## Dursuntale ${{ github.ref_name }}
-            
+
             Android APK otomatik olarak build edildi.
-            
+
             ### Kurulum
             1. APK dosyasını indir
             2. Android ayarlarından "Bilinmeyen kaynaklardan yükleme"yi etkinleştir
